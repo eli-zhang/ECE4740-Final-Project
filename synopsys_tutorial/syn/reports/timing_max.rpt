@@ -1,0 +1,271 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : RegisteredAdd_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Mon Apr 12 21:45:08 2021
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: CinReg/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: SumReg/Q_DO_reg[13]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredAdd_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  Add_DATA_WIDTH16   8000                  saed90nm_typ
+  FF_DATA_WIDTH16_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CinReg/Q_DO_reg[0]/CLK (DFFARX1)         0.00       0.00 r
+  CinReg/Q_DO_reg[0]/Q (DFFARX1)           0.22       0.22 f
+  CinReg/Q_DO[0] (FF_DATA_WIDTH1_1)        0.00       0.22 f
+  Adder/Cin_DI (Add_DATA_WIDTH16)          0.00       0.22 f
+  Adder/U75/QN (NOR2X0)                    0.11       0.33 r
+  Adder/U76/QN (NOR2X0)                    0.11       0.44 f
+  Adder/U77/QN (NOR2X0)                    0.10       0.55 r
+  Adder/U78/QN (NOR2X0)                    0.12       0.67 f
+  Adder/U10/QN (NOR2X0)                    0.11       0.78 r
+  Adder/U34/QN (NOR2X0)                    0.12       0.90 f
+  Adder/U44/QN (NOR2X0)                    0.12       1.02 r
+  Adder/U99/Q (OR2X1)                      0.14       1.16 r
+  Adder/U59/Q (AND2X1)                     0.10       1.26 r
+  Adder/U31/Q (XOR2X1)                     0.15       1.41 r
+  Adder/Sum_DO[13] (Add_DATA_WIDTH16)      0.00       1.41 r
+  SumReg/D_DI[13] (FF_DATA_WIDTH16_0)      0.00       1.41 r
+  SumReg/U38/QN (NAND2X0)                  0.07       1.48 f
+  SumReg/U39/QN (NAND2X0)                  0.07       1.56 r
+  SumReg/Q_DO_reg[13]/D (DFFARX1)          0.04       1.59 r
+  data arrival time                                   1.59
+
+  clock Clk_CI (rise edge)                 0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  SumReg/Q_DO_reg[13]/CLK (DFFARX1)        0.00       0.60 r
+  library setup time                      -0.06       0.54
+  data required time                                  0.54
+  -----------------------------------------------------------
+  data required time                                  0.54
+  data arrival time                                  -1.59
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.06
+
+
+  Startpoint: CinReg/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: SumReg/Q_DO_reg[11]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredAdd_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  Add_DATA_WIDTH16   8000                  saed90nm_typ
+  FF_DATA_WIDTH16_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CinReg/Q_DO_reg[0]/CLK (DFFARX1)         0.00       0.00 r
+  CinReg/Q_DO_reg[0]/Q (DFFARX1)           0.21       0.21 r
+  CinReg/Q_DO[0] (FF_DATA_WIDTH1_1)        0.00       0.21 r
+  Adder/Cin_DI (Add_DATA_WIDTH16)          0.00       0.21 r
+  Adder/U75/QN (NOR2X0)                    0.11       0.32 f
+  Adder/U76/QN (NOR2X0)                    0.10       0.42 r
+  Adder/U77/QN (NOR2X0)                    0.11       0.53 f
+  Adder/U78/QN (NOR2X0)                    0.11       0.64 r
+  Adder/U10/QN (NOR2X0)                    0.12       0.76 f
+  Adder/U34/QN (NOR2X0)                    0.11       0.87 r
+  Adder/U44/QN (NOR2X0)                    0.13       1.00 f
+  Adder/U185/QN (NOR2X0)                   0.11       1.11 r
+  Adder/U186/QN (NOR2X0)                   0.11       1.22 f
+  Adder/U29/Q (XOR2X1)                     0.19       1.41 r
+  Adder/Sum_DO[11] (Add_DATA_WIDTH16)      0.00       1.41 r
+  SumReg/D_DI[11] (FF_DATA_WIDTH16_0)      0.00       1.41 r
+  SumReg/U36/QN (NAND2X0)                  0.07       1.48 f
+  SumReg/U37/QN (NAND2X0)                  0.07       1.55 r
+  SumReg/Q_DO_reg[11]/D (DFFARX1)          0.04       1.59 r
+  data arrival time                                   1.59
+
+  clock Clk_CI (rise edge)                 0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  SumReg/Q_DO_reg[11]/CLK (DFFARX1)        0.00       0.60 r
+  library setup time                      -0.07       0.53
+  data required time                                  0.53
+  -----------------------------------------------------------
+  data required time                                  0.53
+  data arrival time                                  -1.59
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.05
+
+
+  Startpoint: CinReg/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: SumReg/Q_DO_reg[9]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredAdd_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  Add_DATA_WIDTH16   8000                  saed90nm_typ
+  FF_DATA_WIDTH16_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CinReg/Q_DO_reg[0]/CLK (DFFARX1)         0.00       0.00 r
+  CinReg/Q_DO_reg[0]/Q (DFFARX1)           0.21       0.21 r
+  CinReg/Q_DO[0] (FF_DATA_WIDTH1_1)        0.00       0.21 r
+  Adder/Cin_DI (Add_DATA_WIDTH16)          0.00       0.21 r
+  Adder/U75/QN (NOR2X0)                    0.11       0.32 f
+  Adder/U76/QN (NOR2X0)                    0.10       0.42 r
+  Adder/U77/QN (NOR2X0)                    0.11       0.53 f
+  Adder/U78/QN (NOR2X0)                    0.11       0.64 r
+  Adder/U10/QN (NOR2X0)                    0.12       0.76 f
+  Adder/U34/QN (NOR2X0)                    0.11       0.87 r
+  Adder/U44/QN (NOR2X0)                    0.13       1.00 f
+  Adder/U182/QN (NOR2X0)                   0.11       1.11 r
+  Adder/U183/QN (NOR2X0)                   0.11       1.22 f
+  Adder/U27/Q (XOR2X1)                     0.19       1.40 r
+  Adder/Sum_DO[9] (Add_DATA_WIDTH16)       0.00       1.40 r
+  SumReg/D_DI[9] (FF_DATA_WIDTH16_0)       0.00       1.40 r
+  SumReg/U40/QN (NAND2X0)                  0.07       1.48 f
+  SumReg/U41/QN (NAND2X0)                  0.07       1.55 r
+  SumReg/Q_DO_reg[9]/D (DFFARX1)           0.04       1.58 r
+  data arrival time                                   1.58
+
+  clock Clk_CI (rise edge)                 0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  SumReg/Q_DO_reg[9]/CLK (DFFARX1)         0.00       0.60 r
+  library setup time                      -0.07       0.53
+  data required time                                  0.53
+  -----------------------------------------------------------
+  data required time                                  0.53
+  data arrival time                                  -1.58
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.05
+
+
+  Startpoint: CinReg/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: SumReg/Q_DO_reg[12]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredAdd_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  Add_DATA_WIDTH16   8000                  saed90nm_typ
+  FF_DATA_WIDTH16_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CinReg/Q_DO_reg[0]/CLK (DFFARX1)         0.00       0.00 r
+  CinReg/Q_DO_reg[0]/Q (DFFARX1)           0.21       0.21 r
+  CinReg/Q_DO[0] (FF_DATA_WIDTH1_1)        0.00       0.21 r
+  Adder/Cin_DI (Add_DATA_WIDTH16)          0.00       0.21 r
+  Adder/U75/QN (NOR2X0)                    0.11       0.32 f
+  Adder/U76/QN (NOR2X0)                    0.10       0.42 r
+  Adder/U77/QN (NOR2X0)                    0.11       0.53 f
+  Adder/U78/QN (NOR2X0)                    0.11       0.64 r
+  Adder/U79/QN (NOR2X0)                    0.11       0.75 f
+  Adder/U80/QN (NOR2X0)                    0.10       0.86 r
+  Adder/U43/QN (NOR2X0)                    0.14       0.99 f
+  Adder/U125/QN (NOR2X0)                   0.12       1.11 r
+  Adder/U126/QN (NOR2X0)                   0.11       1.21 f
+  Adder/U41/Q (XOR2X1)                     0.19       1.40 r
+  Adder/Sum_DO[12] (Add_DATA_WIDTH16)      0.00       1.40 r
+  SumReg/D_DI[12] (FF_DATA_WIDTH16_0)      0.00       1.40 r
+  SumReg/U34/QN (NAND2X0)                  0.07       1.48 f
+  SumReg/U35/QN (NAND2X0)                  0.07       1.55 r
+  SumReg/Q_DO_reg[12]/D (DFFARX1)          0.04       1.58 r
+  data arrival time                                   1.58
+
+  clock Clk_CI (rise edge)                 0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  SumReg/Q_DO_reg[12]/CLK (DFFARX1)        0.00       0.60 r
+  library setup time                      -0.07       0.53
+  data required time                                  0.53
+  -----------------------------------------------------------
+  data required time                                  0.53
+  data arrival time                                  -1.58
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.05
+
+
+  Startpoint: CinReg/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: SumReg/Q_DO_reg[8]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredAdd_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  Add_DATA_WIDTH16   8000                  saed90nm_typ
+  FF_DATA_WIDTH16_0  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  CinReg/Q_DO_reg[0]/CLK (DFFARX1)         0.00       0.00 r
+  CinReg/Q_DO_reg[0]/Q (DFFARX1)           0.21       0.21 r
+  CinReg/Q_DO[0] (FF_DATA_WIDTH1_1)        0.00       0.21 r
+  Adder/Cin_DI (Add_DATA_WIDTH16)          0.00       0.21 r
+  Adder/U75/QN (NOR2X0)                    0.11       0.32 f
+  Adder/U76/QN (NOR2X0)                    0.10       0.42 r
+  Adder/U77/QN (NOR2X0)                    0.11       0.53 f
+  Adder/U78/QN (NOR2X0)                    0.11       0.64 r
+  Adder/U79/QN (NOR2X0)                    0.11       0.75 f
+  Adder/U80/QN (NOR2X0)                    0.10       0.86 r
+  Adder/U43/QN (NOR2X0)                    0.14       0.99 f
+  Adder/U113/QN (NOR2X0)                   0.12       1.11 r
+  Adder/U114/QN (NOR2X0)                   0.11       1.21 f
+  Adder/U39/Q (XOR2X1)                     0.19       1.40 r
+  Adder/Sum_DO[8] (Add_DATA_WIDTH16)       0.00       1.40 r
+  SumReg/D_DI[8] (FF_DATA_WIDTH16_0)       0.00       1.40 r
+  SumReg/U32/QN (NAND2X0)                  0.07       1.48 f
+  SumReg/U33/QN (NAND2X0)                  0.07       1.55 r
+  SumReg/Q_DO_reg[8]/D (DFFARX1)           0.04       1.58 r
+  data arrival time                                   1.58
+
+  clock Clk_CI (rise edge)                 0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  SumReg/Q_DO_reg[8]/CLK (DFFARX1)         0.00       0.60 r
+  library setup time                      -0.07       0.53
+  data required time                                  0.53
+  -----------------------------------------------------------
+  data required time                                  0.53
+  data arrival time                                  -1.58
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.05
+
+
+1

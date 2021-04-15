@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : RegisteredAdd_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Mon Apr 12 22:11:09 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RegisteredAdd_DATA_WIDTH16
+                       8000              saed90nm_typ
+FF_DATA_WIDTH16_2      8000              saed90nm_typ
+FF_DATA_WIDTH1_1       ForQA             saed90nm_typ
+Add_DATA_WIDTH16       8000              saed90nm_typ
+FF_DATA_WIDTH16_0      8000              saed90nm_typ
+FF_DATA_WIDTH16_1      8000              saed90nm_typ
+FF_DATA_WIDTH1_0       ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+RegisteredAdd_DATA_WIDTH16              154.937 2.29e+03 1.65e+07 2.46e+03 100.0
+  CoutReg (FF_DATA_WIDTH1_0)              1.498   41.214 2.09e+05   42.921   1.7
+  SumReg (FF_DATA_WIDTH16_0)             34.157  671.099 3.13e+06  708.389  28.8
+  Adder (Add_DATA_WIDTH16)               57.786  127.189 4.64e+06  189.618   7.7
+  CinReg (FF_DATA_WIDTH1_1)               1.945   42.680 2.86e+05   44.911   1.8
+  BReg (FF_DATA_WIDTH16_1)               32.129  716.421 4.17e+06  752.720  30.6
+  AReg (FF_DATA_WIDTH16_2)               27.421  691.366 4.08e+06  722.870  29.4
+1

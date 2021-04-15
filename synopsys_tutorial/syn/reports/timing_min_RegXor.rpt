@@ -1,0 +1,190 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : RegisteredXor_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Thu Apr 15 02:44:09 2021
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_DI[4] (input port clocked by Clk_CI)
+  Endpoint: AReg/Q_DO_reg[4]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredXor_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  FF_DATA_WIDTH16_2  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 f
+  A_DI[4] (in)                             0.00       0.20 f
+  AReg/D_DI[4] (FF_DATA_WIDTH16_2)         0.00       0.20 f
+  AReg/U13/Q (MUX21X1)                     0.10       0.30 f
+  AReg/Q_DO_reg[4]/D (DFFARX1)             0.03       0.33 f
+  data arrival time                                   0.33
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  AReg/Q_DO_reg[4]/CLK (DFFARX1)           0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.31
+
+
+  Startpoint: A_DI[3] (input port clocked by Clk_CI)
+  Endpoint: AReg/Q_DO_reg[3]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredXor_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  FF_DATA_WIDTH16_2  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 f
+  A_DI[3] (in)                             0.00       0.20 f
+  AReg/D_DI[3] (FF_DATA_WIDTH16_2)         0.00       0.20 f
+  AReg/U14/Q (MUX21X1)                     0.10       0.30 f
+  AReg/Q_DO_reg[3]/D (DFFARX1)             0.03       0.33 f
+  data arrival time                                   0.33
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  AReg/Q_DO_reg[3]/CLK (DFFARX1)           0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.31
+
+
+  Startpoint: A_DI[2] (input port clocked by Clk_CI)
+  Endpoint: AReg/Q_DO_reg[2]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredXor_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  FF_DATA_WIDTH16_2  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 f
+  A_DI[2] (in)                             0.00       0.20 f
+  AReg/D_DI[2] (FF_DATA_WIDTH16_2)         0.00       0.20 f
+  AReg/U15/Q (MUX21X1)                     0.10       0.30 f
+  AReg/Q_DO_reg[2]/D (DFFARX1)             0.03       0.33 f
+  data arrival time                                   0.33
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  AReg/Q_DO_reg[2]/CLK (DFFARX1)           0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.31
+
+
+  Startpoint: A_DI[1] (input port clocked by Clk_CI)
+  Endpoint: AReg/Q_DO_reg[1]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredXor_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  FF_DATA_WIDTH16_2  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 f
+  A_DI[1] (in)                             0.00       0.20 f
+  AReg/D_DI[1] (FF_DATA_WIDTH16_2)         0.00       0.20 f
+  AReg/U16/Q (MUX21X1)                     0.10       0.30 f
+  AReg/Q_DO_reg[1]/D (DFFARX1)             0.03       0.33 f
+  data arrival time                                   0.33
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  AReg/Q_DO_reg[1]/CLK (DFFARX1)           0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.31
+
+
+  Startpoint: A_DI[0] (input port clocked by Clk_CI)
+  Endpoint: AReg/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RegisteredXor_DATA_WIDTH16
+                     8000                  saed90nm_typ
+  FF_DATA_WIDTH16_2  8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 f
+  A_DI[0] (in)                             0.00       0.20 f
+  AReg/D_DI[0] (FF_DATA_WIDTH16_2)         0.00       0.20 f
+  AReg/U17/Q (MUX21X1)                     0.10       0.30 f
+  AReg/Q_DO_reg[0]/D (DFFARX1)             0.03       0.33 f
+  data arrival time                                   0.33
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  AReg/Q_DO_reg[0]/CLK (DFFARX1)           0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.31
+
+
+1

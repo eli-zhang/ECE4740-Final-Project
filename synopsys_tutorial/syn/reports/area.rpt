@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : RegisteredAdd_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Mon Apr 12 21:59:03 2021
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                          218
+Number of nets:                           646
+Number of cells:                          422
+Number of combinational cells:            366
+Number of sequential cells:                50
+Number of macros/black boxes:               0
+Number of buf/inv:                         69
+Number of references:                       6
+
+Combinational area:               2287.411242
+Buf/Inv area:                      391.680009
+Noncombinational area:            1609.113625
+Macro/Black Box area:                0.000000
+Net Interconnect area:             209.990636
+
+Total cell area:                  3896.524867
+Total area:                       4106.515503
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------
+RegisteredAdd_DATA_WIDTH16        3896.5249    100.0     0.0000     0.0000  0.0000  RegisteredAdd_DATA_WIDTH16
+AReg                               876.4416     22.5   361.2672   515.1744  0.0000  FF_DATA_WIDTH16_2
+Adder                             1210.0608     31.1  1210.0608     0.0000  0.0000  Add_DATA_WIDTH16
+BReg                               891.1872     22.9   377.8560   513.3312  0.0000  FF_DATA_WIDTH16_1
+CinReg                              61.7472      1.6    29.4912    32.2560  0.0000  FF_DATA_WIDTH1_1
+CoutReg                             54.3744      1.4    22.1184    32.2560  0.0000  FF_DATA_WIDTH1_0
+SumReg                             802.7136     20.6   286.6176   516.0960  0.0000  FF_DATA_WIDTH16_0
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------
+Total                                                 2287.4112  1609.1136  0.0000
+
+1

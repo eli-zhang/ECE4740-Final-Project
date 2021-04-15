@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : RegisteredXor_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Thu Apr 15 02:44:47 2021
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                          204
+Number of nets:                           300
+Number of cells:                          116
+Number of combinational cells:             64
+Number of sequential cells:                48
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:                752.025620
+Buf/Inv area:                        0.000000
+Noncombinational area:            1548.288025
+Macro/Black Box area:                0.000000
+Net Interconnect area:             132.545664
+
+Total cell area:                  2300.313644
+Total area:                       2432.859309
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------
+RegisteredXor_DATA_WIDTH16        2300.3136    100.0    0.0000     0.0000  0.0000  RegisteredXor_DATA_WIDTH16
+AReg                               693.0432     30.1  176.9472   516.0960  0.0000  FF_DATA_WIDTH16_2
+BReg                               693.0432     30.1  176.9472   516.0960  0.0000  FF_DATA_WIDTH16_1
+XOR                                221.1840      9.6  221.1840     0.0000  0.0000  Xor_DATA_WIDTH16
+XorReg                             693.0432     30.1  176.9472   516.0960  0.0000  FF_DATA_WIDTH16_0
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------
+Total                                                 752.0256  1548.2880  0.0000
+
+1

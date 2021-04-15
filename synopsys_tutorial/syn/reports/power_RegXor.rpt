@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : RegisteredXor_DATA_WIDTH16
+Version: R-2020.09-SP2
+Date   : Thu Apr 15 02:45:40 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RegisteredXor_DATA_WIDTH16
+                       8000              saed90nm_typ
+FF_DATA_WIDTH16_2      8000              saed90nm_typ
+Xor_DATA_WIDTH16       8000              saed90nm_typ
+FF_DATA_WIDTH16_0      8000              saed90nm_typ
+FF_DATA_WIDTH16_1      8000              saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+RegisteredXor_DATA_WIDTH16                3.143  206.284 1.19e+07  221.296 100.0
+  XorReg (FF_DATA_WIDTH16_0)              0.592   66.417 3.56e+06   70.568  31.9
+  XOR (Xor_DATA_WIDTH16)                  0.423    4.650 1.08e+06    6.150   2.8
+  BReg (FF_DATA_WIDTH16_1)                1.113   67.679 3.62e+06   72.409  32.7
+  AReg (FF_DATA_WIDTH16_2)                1.014   67.539 3.62e+06   72.169  32.6
+1

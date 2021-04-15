@@ -1,0 +1,378 @@
+dc_shell> analyze -library work -format verilog ../src/FF.v
+Running PRESTO HDLC
+Compiling source file ../src/FF.v
+Presto compilation completed successfully.
+Loading db file '/classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+1
+dc_shell> analyze -library work -format verilog ../src/xor.v
+Running PRESTO HDLC
+Compiling source file ../src/xor.v
+Presto compilation completed successfully.
+1
+dc_shell> analyze -library work -format verilog ../src/RegisteredXOR.v
+Running PRESTO HDLC
+Compiling source file ../src/RegisteredXOR.v
+Presto compilation completed successfully.
+1
+dc_shell> elaborate RegisteredXOR -library work
+Loading db file '/opt/synopsys/syn/R-2020-09.SP2/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/syn/R-2020-09.SP2/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  File /home/ekz5/Downloads/synopsys_tutorial/syn/RegisteredXOR-verilog.pvl not found, or does not contain a usable description of RegisteredXOR. (ELAB-320)
+Presto compilation completed successfully.
+0
+dc_shell> elaborate RegisteredXor -library work
+Running PRESTO HDLC
+Presto compilation completed successfully. (RegisteredXor)
+Elaborated 1 design.
+Current design is now 'RegisteredXor'.
+Information: Building the design 'FF' instantiated from design 'RegisteredXor' with
+        the parameters "DATA_WIDTH=1". (HDL-193)
+
+Inferred memory devices in process
+        in routine FF_DATA_WIDTH1 line 23 in file
+                '../src/FF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Q_DO_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (FF_DATA_WIDTH1)
+Information: Building the design 'Xor' instantiated from design 'RegisteredXor' with
+        the parameters "DATA_WIDTH=1". (HDL-193)
+Presto compilation completed successfully. (Xor_DATA_WIDTH1)
+1
+dc_shell> list_designs
+FF_DATA_WIDTH1          RegisteredXor (*)       Xor_DATA_WIDTH1
+1
+dc_shell> elaborate RegisteredXor -library work -param DATA_WIDTH=>16
+Running PRESTO HDLC
+Presto compilation completed successfully. (RegisteredXor_DATA_WIDTH16)
+Elaborated 1 design.
+Current design is now 'RegisteredXor_DATA_WIDTH16'.
+Information: Building the design 'FF' instantiated from design 'RegisteredXor_DATA_WIDTH16' with
+        the parameters "DATA_WIDTH=16". (HDL-193)
+
+Inferred memory devices in process
+        in routine FF_DATA_WIDTH16 line 23 in file
+                '../src/FF.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Q_DO_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (FF_DATA_WIDTH16)
+Information: Building the design 'Xor' instantiated from design 'RegisteredXor_DATA_WIDTH16' with
+        the parameters "DATA_WIDTH=16". (HDL-193)
+Presto compilation completed successfully. (Xor_DATA_WIDTH16)
+1
+dc_shell> list_designs
+FF_DATA_WIDTH1                  RegisteredXor_DATA_WIDTH16 (*)
+FF_DATA_WIDTH16                 Xor_DATA_WIDTH1
+RegisteredXor                   Xor_DATA_WIDTH16
+1
+dc_shell> create_clock Clk_CI -period 6.0
+1
+dc_shell> set_clock_transition 0.2 [get_clocks Clk_CI]
+1
+dc_shell> set_input_delay 0.2 -clock Clk_CI [remove_from_collection [all_inputs] [get_ports Clk_CI]]
+1
+dc_shell> set_driving_cell -library saed90nm_typ -lib_cell INVX4 -pin ZN [all_inputs]
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+        set on the port. (UID-401)
+1
+dc_shell> compile_ultra -no_autoungroup
+Loading db file '/opt/synopsys/syn/R-2020-09.SP2/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Uniquified 3 instances of design 'FF_DATA_WIDTH16'. (OPT-1056)
+  Simplifying Design 'RegisteredXor_DATA_WIDTH16'
+
+Loaded alib file './alib-52/saed90nm_typ.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'RegisteredXor_DATA_WIDTH16'
+  Processing 'FF_DATA_WIDTH16_0'
+  Processing 'Xor_DATA_WIDTH16'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+        Number of combinational loops found: 0
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02    2615.5      0.00       0.0       0.0                           18810084.0000
+    0:00:02    2615.5      0.00       0.0       0.0                           18810084.0000
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+        Number of combinational loops found: 0
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+
+Threshold voltage group cell usage:
+>> saed90cell_svt 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+        Number of combinational loops found: 0
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+    0:00:02    2300.3      0.00       0.0       0.0                           12561065.0000
+Loading db file '/classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+dc_shell> check_design
+1
+dc_shell> report_timing -max_paths 5 > ./reports/timing_max_RegXor.rpt
+dc_shell> report_timing -delay min -max_paths 5 > ./reports/timing_min_RegXor.rpt
+dc_shell> report_area -hierarchy > ./reports/area_RegXor.rpt
+dc_shell> report_power -hierarhy > ./reports/power_RegXor.rpt
+Error: Errors detected during redirect
+        Use error_info for more info. (CMD-013)
+dc_shell> report_power -hierarchy > ./reports/power_RegXor.rpt
+dc_shell> 
+
+Memory usage for this session 153 Mbytes.
+Memory usage for this session including child processes 153 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 2834 seconds ( 0.79 hours ).
+
+Thank you...
