@@ -1,0 +1,10 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 10/27/2020 22:22 (sjfhw691) $
+\o Sub version:		sub-version  s154 
+\o Arguments:		-display :51.0 -mpssession virtuoso36256 -mpshost en-ec-ecelinux-03.coecis.cornell.edu -namespace CDBA -cdslib /home/hpl23/ECE4740-Final-Project/cds.lib 
+\o Working Directory:	en-ec-ecelinux-03.coecis.cornell.edu:/home/hpl23/ECE4740-Final-Project
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(774 225 500 400))
+\a exit(0)
