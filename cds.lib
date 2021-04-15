@@ -1,0 +1,11 @@
+# File Created by Grace Natalia Tan at Fri Feb  5 14:27:09 2021
+# assisted by CdsLibEditor
+DEFINE analogLib /opt/cadence/IC618-150/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE sbaLib /opt/cadence/IC618-150/tools/dfII/etc/cdslib/artist/sbaLib
+DEFINE basic /opt/cadence/IC618-150/tools/dfII/etc/cdslib/basic
+DEFINE sample /opt/cadence/IC618-150/tools/dfII/samples/cdslib/sample
+DEFINE US_8ths /opt/cadence/IC618-150/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE gpdk090 /opt/cadence-designkits/gpdk090.old/libs.oa22/gpdk090
+
+DEFINE ece4740 /home/ekz5/Cadence/ece4740
+DEFINE avTech /opt/cadence/assura/tools.lnx86/assura/etc/avtech/avTech
