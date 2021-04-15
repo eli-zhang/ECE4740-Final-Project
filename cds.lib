@@ -7,6 +7,5 @@ DEFINE sample /opt/cadence/IC618-150/tools/dfII/samples/cdslib/sample
 DEFINE US_8ths /opt/cadence/IC618-150/tools/dfII/etc/cdslib/sheets/US_8ths
 DEFINE gpdk090 /opt/cadence-designkits/gpdk090.old/libs.oa22/gpdk090
 
-DEFINE ece4740 /home/hpl23/Cadence/ece4740
 DEFINE finalProject /home/hpl23/ECE4740-Final-Project/finalProject
 DEFINE avTech /opt/cadence/assura/tools.lnx86/assura/etc/avtech/avTech
