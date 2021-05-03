@@ -1,2 +1,4 @@
 .log
 cds.lib
+.cdslck
+.cdslck.*
