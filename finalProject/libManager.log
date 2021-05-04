@@ -1,20 +1,21 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 10/27/2020 22:20 (sjfhw691) $
 \o Sub version:		sub-version  s154 
-\o Arguments:		-unmapped -mpssession virtuoso14026 -mpshost en-ec-ecelinux-06.coecis.cornell.edu 
-\o Working Directory:	en-ec-ecelinux-06.coecis.cornell.edu:/home/ekz5/ECE4740-Final-Project/finalProject
+\o Arguments:		-unmapped -mpssession virtuoso8290 -mpshost en-ec-ecelinux-17.coecis.cornell.edu 
+\o Working Directory:	en-ec-ecelinux-17.coecis.cornell.edu:/home/hpl23/ECE4740-Final-Project/finalProject
 \o 64-bit offsets
 \o Qt version: 		5.9.1
-\o changeWorkingDir("/home/ekz5/ECE4740-Final-Project/finalProject") unnecessary.
+\o changeWorkingDir("/home/hpl23/ECE4740-Final-Project/finalProject") unnecessary.
 \o ddSetForcedLib("") unnecessary.
-\o Log file is "/home/ekz5/ECE4740-Final-Project/finalProject/libManager.log".
+\o Log file is "/home/hpl23/ECE4740-Final-Project/finalProject/libManager.log".
 \o Opening libManager window.
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
 \w Warning: ddUpdateLibList: Did not find any 'cds.lib' file.
-\a nrResizeWindow(cdsLibManager list(111 31 600 537))
+\a nrResizeWindow(cdsLibManager list(0 31 1280 597))
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(-71 297 1280 597))
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown
