@@ -16,15 +16,30 @@ module LFSR_DegSeven_One
    input Rst_RBI, // Reset signal
    input WrEn_SI, // Write-enable
 
-   input SeedWr_DI,
-   input [DEGREE-1:0] Seed_DI,
+   input SeedWr_DI, // Select seed for initialization
+   input [DEGREE-1:0] Seed_DI, // Initial Seed
    
-   output LFSR_DO
+   output LFSR_DO // Output of LFSR
 );
 
 wire G_D, F_D, E_D, D_D;
 wire C_D, B_D, A_D, LFSR_Out;
+wire [DEGREE-1:0] LFSR_Mux_In, LFSR_Mux_Out;
 
+////////////////////////
+// Mux Selection
+////////////////////////
+
+ Mux2_1 #(
+   .DATA_WIDTH ( DEGREE )
+ )
+ Mux
+ (
+   .A_DI (LFSR_Mux_In),
+   .B_DI (Seed_DI),
+   .Sel_DI (SeedWr_DI),
+   .MuxOut_DO (LFSR_Mux_Out)
+ );
 
 ////////////////////////
 // LFSR registers
@@ -40,8 +55,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( LFSR_Out),
-   .Q_DO    ( G_D     )
+   .D_DI    ( LFSR_Mux_Out[6]),
+   .Q_DO    ( LFSR_Mux_In[6])
  );
  
  FF #(
@@ -52,8 +67,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( G_D     ),
-   .Q_DO    ( F_D     )
+   .D_DI    ( LFSR_Mux_Out[5]),
+   .Q_DO    ( LFSR_Mux_In[5])
  );
 
  FF #(
@@ -64,8 +79,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( F_D     ),
-   .Q_DO    ( E_D     )
+   .D_DI    ( LFSR_Mux_Out[4]),
+   .Q_DO    ( LFSR_Mux_In[4])
  );
 
  FF #(
@@ -76,8 +91,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( E_D     ),
-   .Q_DO    ( D_D     )
+   .D_DI    ( LFSR_Mux_Out[3]),
+   .Q_DO    ( LFSR_Mux_In[3])
  );
 
  FF #(
@@ -88,8 +103,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( D_D     ),
-   .Q_DO    ( C_D     )
+   .D_DI    ( LFSR_Mux_Out[2]),
+   .Q_DO    ( LFSR_Mux_In[2])
  );
 
  FF #(
@@ -100,8 +115,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( C_D     ),
-   .Q_DO    ( B_D     )
+   .D_DI    ( LFSR_Mux_Out[1]),
+   .Q_DO    ( LFSR_Mux_In[1])
  );
 
  FF #(
@@ -112,8 +127,8 @@ wire C_D, B_D, A_D, LFSR_Out;
    .Clk_CI  ( Clk_CI  ),
    .Rst_RBI ( Rst_RBI ),
    .WrEn_SI ( WrEn_SI ),
-   .D_DI    ( B_D     ),
-   .Q_DO    ( A_D     )
+   .D_DI    ( LFSR_Mux_Out[0]),
+   .Q_DO    ( LFSR_Mux_In[0])
  );
 
 ////////////////////////
@@ -125,8 +140,8 @@ wire C_D, B_D, A_D, LFSR_Out;
  )
  XOR
  (
-   .A_DI    ( G_D    ),
-   .B_DI    ( A_D    ),
+   .A_DI    ( LFSR_Mux_In[6]),
+   .B_DI    ( LFSR_Mux_In[0]),
    .Xor_DO ( LFSR_Out)
  );
 
@@ -145,22 +160,5 @@ wire C_D, B_D, A_D, LFSR_Out;
    .D_DI    ( LFSR_Out),
    .Q_DO    ( LFSR_DO  )
  ); 
-
-// Purpose: Load up LFSR with Seed if Data Valid (DV) pulse is detected.
- // Othewise just run LFSR when enabled.
-  always @(posedge Clk_CI)
-    begin
-      if (WrEn_SI == 1'b1)
-        begin
-          if (SeedWr_DI == 1'b1)
-            DFFG <= Seed_DI[6];
-            DFFF <= Seed_DI[5];
-            DFFE <= Seed_DI[4];
-            DFFD <= Seed_DI[3];
-            DFFC <= Seed_DI[2];
-            DFFB <= Seed_DI[1];
-            DFFA <= Seed_DI[0];
-        end
-    end
 
 endmodule
