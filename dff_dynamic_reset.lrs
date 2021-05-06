@@ -1,0 +1,37 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:29 (sjfhw697) $
+sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
+run on en-ec-ecelinux-11.coecis.cornell.edu at Wed May  5 21:28:04 2021
+
+Schematic                               | Layout                               | Status
+-----------------------------------------------------------------------------------------
+mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched
+dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched
+dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:finalProject
+  Cell   :dff_dynamic_reset
+  View   :schematic
+
+Layout:
+  Library:finalProject
+  Cell   :dff_dynamic_reset
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

@@ -1,0 +1,7 @@
+Schematic                               | Layout                               | Status
+-----------------------------------------------------------------------------------------
+mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched
+dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched
+dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| matched
+
+Schematic and Layout Match

@@ -1,0 +1,7 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"mux_2_1 layout finalProject" "mux_2_1 schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"dff_dynamic layout finalProject" "dff_dynamic schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"dff_dynamic_reset layout finalProject" "dff_dynamic_reset schematic finalProject"
+Devices filtered from layout
+"TIE"
