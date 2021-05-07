@@ -1,0 +1,4 @@
+!<alc> v1 37
+0   12    0 mux_2_1 layout finalProject
+0   11    0 dff_dynamic layout finalProject
+0   13    0 dff_dynamic_reset layout finalProject

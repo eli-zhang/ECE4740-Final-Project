@@ -1,0 +1,16 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'dff_dynamic_reset layout finalProject':
+  info: Assign pin label "D" at (0.3450, 1.4000) to layer `Metal1_p'.
+  info: Assign pin label "!CLK" at (0.8100, 1.1975) to layer `Metal1_p'.
+  info: Assign pin label "CLK" at (0.8100, 1.6350) to layer `Metal1_p'.
+  info: Assign pin label "gnd!" at (2.6200, 0.2800) to layer `Metal1_p'.
+  info: Assign pin label "R" at (4.1400, 0.7900) to layer `Metal1_p'.
+  info: Assign pin label "!Set" at (4.1200, 1.4000) to layer `Metal1_p'.
+  info: Assign pin label "vdd!" at (2.6200, 3.1600) to layer `Metal1_p'.
+  info: Assign pin label "Q" at (4.5600, 1.4700) to layer `Metal1_p'.
+  info: Assign pin label "Set" at (5.0000, 1.4000) to layer `Metal1_p'.
+
+***** End of Label Report *****
+
