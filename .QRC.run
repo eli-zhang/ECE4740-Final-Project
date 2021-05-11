@@ -3,4 +3,4 @@
 # THE RUN FILE created by Cadence Extraction Quantus UI Version 20.1.2-p025
 #--------------------------------------------------------------------------------------
 
-qrc  -log_file /home/hpl23/ECE4740-Final-Project/qrc.Final_MUX_1.log -cmd /home/hpl23/ECE4740-Final-Project/qrc.Final_MUX_1.ccl 
+qrc  -log_file /home/hpl23/ECE4740-Final-Project/qrc.xor_regular.log -cmd /home/hpl23/ECE4740-Final-Project/qrc.xor_regular.ccl 

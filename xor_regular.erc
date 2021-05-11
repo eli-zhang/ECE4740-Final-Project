@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'xor_regular layout finalProject':
+  info: Assign pin label "B" at (0.2350, 1.1200) to layer `Metal1_p'.
+  info: Assign pin label "A" at (0.2950, 1.4550) to layer `Metal1_p'.
+  info: Assign pin label "gnd!" at (1.9900, 0.0800) to layer `Metal1_p'.
+  info: Assign pin label "vdd!" at (1.9900, 2.9600) to layer `Metal1_p'.
+  info: Assign pin label "Y" at (3.5900, 1.9200) to layer `Metal1_p'.
+
+***** End of Label Report *****
+
