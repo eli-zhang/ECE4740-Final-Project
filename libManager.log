@@ -1,7 +1,7 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 10/27/2020 22:20 (sjfhw691) $
 \o Sub version:		sub-version  s154 
-\o Arguments:		-unmapped -mpssession virtuoso7760 -mpshost en-ec-ecelinux-04.coecis.cornell.edu 
-\o Working Directory:	en-ec-ecelinux-04.coecis.cornell.edu:/home/ekz5/ECE4740-Final-Project
+\o Arguments:		-unmapped -mpssession virtuoso60343 -mpshost en-ec-ecelinux-16.coecis.cornell.edu 
+\o Working Directory:	en-ec-ecelinux-16.coecis.cornell.edu:/home/ekz5/ECE4740-Final-Project
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o changeWorkingDir("/home/ekz5/ECE4740-Final-Project") unnecessary.
@@ -13,12 +13,18 @@
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(111 31 600 537))
-\a cdsLibManager->libListBox->value = "gpdk090"
-\a cdsLibManager->libLineEdit->value = "gpdk090"
 \a cdsLibManager->libListBox->value = "finalProject"
 \a cdsLibManager->libLineEdit->value = "finalProject"
+\a cdsLibManager->cellListBox->value = "dff_dynamic"
+\a cdsLibManager->cellLineEdit->value = "dff_dynamic"
 \a cdsLibManager->cellListBox->value = "testbench"
 \a cdsLibManager->cellLineEdit->value = "testbench"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "testbench_full"
+\a cdsLibManager->cellLineEdit->value = "testbench_full"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
@@ -35,8 +41,8 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "finalProject"
 \a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "testbench"
-\a cdsLibManager->cellLineEdit->value = "testbench"
+\a cdsLibManager->cellListBox->value = "testbench_full"
+\a cdsLibManager->cellLineEdit->value = "testbench_full"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -45,104 +51,4 @@
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "mux_min"
-\a cdsLibManager->cellLineEdit->value = "mux_min"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "mux_2_1"
-\a cdsLibManager->cellLineEdit->value = "mux_2_1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "dff_dynamic"
-\a cdsLibManager->cellLineEdit->value = "dff_dynamic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "av_extracted"
-\a cdsLibManager->viewLineEdit->value = "av_extracted"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrResizeWindow(cdsLibManager list(111 31 600 738))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a _lmgrCloseIconify("cdsLibManager" 1)
