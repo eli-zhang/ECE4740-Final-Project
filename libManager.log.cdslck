@@ -5,12 +5,12 @@
 #
 LockStakeVersion               1.1
 LoginName                      ekz5
-HostName                       en-ec-ecelinux-16.coecis.cornell.edu
-ProcessIdentifier              60933
-ProcessCreationTime_UTC        1620704713
-ProcessCreationTime_Readable   Mon May 10 23:45:13 2021 EDT
+HostName                       en-ec-ecelinux-13.coecis.cornell.edu
+ProcessIdentifier              20937
+ProcessCreationTime_UTC        1620757861
+ProcessCreationTime_Readable   Tue May 11 14:31:01 2021 EDT
 AppIdentifier                  /opt/cadence/IC618-150/tools/dfII/bin/64bit/libManager
 OSType                         lnx86
 ReasonForPlacingEditLock       log file
 FilePathUsedToEditLock         /home/ekz5/ECE4740-Final-Project/libManager.log
-TimeEditLocked                 Mon May 10 23:45:40 2021 EDT
+TimeEditLocked                 Tue May 11 14:32:50 2021 EDT
