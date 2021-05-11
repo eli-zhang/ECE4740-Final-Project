@@ -1,0 +1,14 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'Final_MUX_1 layout finalProject':
+  info: Assign pin label "in1" at (1.2050, 1.2950) to layer `Metal1_p'.
+  info: Assign pin label "gnd" at (2.6200, 0.0800) to layer `Metal1_p'.
+  info: Assign pin label "s" at (-1.6850, 4.8575) to layer `Metal1_p'.
+  info: Assign pin label "vdd" at (2.6200, 3.0400) to layer `Metal1_p'.
+  info: Assign pin label "in2" at (1.2050, 4.7850) to layer `Metal1_p'.
+  info: Assign pin label "out" at (8.0800, 1.2350) to layer `Metal1_p'.
+  info: Assign pin label "out" at (8.0850, 1.2300) to layer `Metal1_p'.
+
+***** End of Label Report *****
+
