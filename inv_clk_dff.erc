@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'inv_clk_dff layout finalProject':
+  info: Assign pin label "Vin" at (0.9900, 1.2000) to layer `Metal1_p'.
+  info: Assign pin label "gnd!" at (2.8700, 0.0800) to layer `Metal1_p'.
+  info: Assign pin label "Vout" at (4.5500, 1.2000) to layer `Metal1_p'.
+  info: Assign pin label "vdd!" at (2.8700, 2.9600) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

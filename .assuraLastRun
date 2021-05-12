@@ -1,2 +1,2 @@
 runDir = .
-runName = xor_regular
+runName = inv_clk_dff

@@ -1,0 +1,17 @@
+
+
+;----------------------------------------------------------------------------
+; vldb RSF file
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+; form additions
+avSimName = "auLvs"
+avDisableWildcardPG = nil
+avVerilogBusMapIEEE = t
+avLibName  = "finalProject"
+avCellName = "inv_clk_dff"
+avViewName = "schematic"
+avViewList = "auLvs schematic symbol"
+avStopList = "auLvs"
+avVldbFile = "/home/hpl23/ECE4740-Final-Project/inv_clk_dff.sdb"
