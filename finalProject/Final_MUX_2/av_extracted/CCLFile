@@ -26,12 +26,12 @@ filter_res \
 	 -merge_parallel_res false \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "Final_MUX_2 layout ECE4740-Final-Project" \
+	 -design_cell_name "sub_mux_2 layout ECE4740-Final-Project" \
 	 -directory_name "/home/js3599/ece4740" \
 	 -format "DFII" \
-	 -run_name "Final_MUX_2"
+	 -run_name "sub_mux_2"
 log_file \
-	 -file_name "/home/js3599/ece4740/qrc.Final_MUX_2.log"
+	 -file_name "/home/js3599/ece4740/qrc.sub_mux_2.log"
 output_db -type extracted_view \
 	 -cap_component "pcapacitor" \
 	 -cap_property_name "c" \
@@ -45,7 +45,7 @@ output_db -type extracted_view \
 	 -view_name "av_extracted"
 output_setup \
 	 -directory_name "/home/js3599/ece4740" \
-	 -temporary_directory_name "Final_MUX_2"
+	 -temporary_directory_name "sub_mux_2"
 process_technology \
 	 -technology_corner \
 		"default" \
