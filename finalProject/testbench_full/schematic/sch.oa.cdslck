@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ekz5
+HostName                       en-ec-ecelinux-18.coecis.cornell.edu
+ProcessIdentifier              51169
+ProcessCreationTime_UTC        1621066105
+ProcessCreationTime_Readable   Sat May 15 04:08:25 2021 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/ekz5/ECE4740-Final-Project/finalProject/testbench_full/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Sat May 15 04:08:56 2021 EDT
