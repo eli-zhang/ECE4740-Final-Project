@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : area
+Design : LFSR_DegNine_One
+Version: R-2020.09-SP2
+Date   : Sun May 16 00:24:16 2021
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                          110
+Number of nets:                           144
+Number of cells:                           52
+Number of combinational cells:             25
+Number of sequential cells:                10
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                      17
+
+Combinational area:                293.068808
+Buf/Inv area:                        0.000000
+Noncombinational area:             322.560005
+Macro/Black Box area:                0.000000
+Net Interconnect area:              18.935546
+
+Total cell area:                   615.628813
+Total area:                        634.564359
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------
+LFSR_DegNine_One                   615.6288    100.0    0.0000     0.0000  0.0000  LFSR_DegNine_One
+DFFA                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_1
+DFFB                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_2
+DFFC                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_3
+DFFD                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_4
+DFFE                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_5
+DFFF                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_6
+DFFG                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_7
+DFFH                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_8
+DFFI                                43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_9
+LFSRReg                             43.3152      7.0   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_0
+Mux                                 99.5328     16.2   99.5328     0.0000  0.0000  Mux2_1_DATA_WIDTH9
+XORA                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_5
+XORB                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_4
+XORC                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_3
+XORD                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_2
+XORE                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_1
+XORF                                13.8240      2.2   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1_0
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------
+Total                                                 293.0688   322.5600  0.0000
+
+1
