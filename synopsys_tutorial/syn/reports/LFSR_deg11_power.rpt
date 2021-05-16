@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : LFSR_DegEleven_One
+Version: R-2020.09-SP2
+Date   : Sun May 16 01:00:36 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LFSR_DegEleven_One     8000              saed90nm_typ
+Mux2_1_DATA_WIDTH11    ForQA             saed90nm_typ
+FF_DATA_WIDTH1_11      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_7      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_0       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_1       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_2       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_3       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_4       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_5       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_6       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_7       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_8       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_9       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_10      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_0      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_1      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_2      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_3      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_4      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_5      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_6      ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+LFSR_DegEleven_One                        1.812   54.956 4.09e+06   60.857 100.0
+  LFSRReg (FF_DATA_WIDTH1_0)              0.136    4.139 2.18e+05    4.493   7.4
+  XORH (Xor_DATA_WIDTH1_0)             5.78e-02    0.349 6.64e+04    0.474   0.8
+  XORG (Xor_DATA_WIDTH1_1)             4.84e-02    0.347 6.64e+04    0.462   0.8
+  XORF (Xor_DATA_WIDTH1_2)             4.76e-02    0.338 6.64e+04    0.452   0.7
+  XORE (Xor_DATA_WIDTH1_3)             4.49e-02    0.330 6.63e+04    0.442   0.7
+  XORD (Xor_DATA_WIDTH1_4)             4.33e-02    0.323 6.64e+04    0.433   0.7
+  XORC (Xor_DATA_WIDTH1_5)             4.14e-02    0.307 6.63e+04    0.415   0.7
+  XORB (Xor_DATA_WIDTH1_6)             3.84e-02    0.297 6.64e+04    0.402   0.7
+  XORA (Xor_DATA_WIDTH1_7)             3.47e-02    0.280 6.63e+04    0.381   0.6
+  DFFA (FF_DATA_WIDTH1_1)              6.96e-02    4.107 2.20e+05    4.396   7.2
+  DFFB (FF_DATA_WIDTH1_2)              8.55e-02    4.121 2.20e+05    4.427   7.3
+  DFFC (FF_DATA_WIDTH1_3)              5.93e-02    4.093 2.20e+05    4.373   7.2
+  DFFD (FF_DATA_WIDTH1_4)              8.63e-02    4.125 2.21e+05    4.432   7.3
+  DFFE (FF_DATA_WIDTH1_5)              8.35e-02    4.124 2.20e+05    4.427   7.3
+  DFFF (FF_DATA_WIDTH1_6)              5.83e-02    4.090 2.21e+05    4.368   7.2
+  DFFG (FF_DATA_WIDTH1_7)              8.46e-02    4.116 2.21e+05    4.421   7.3
+  DFFH (FF_DATA_WIDTH1_8)              8.45e-02    4.121 2.20e+05    4.426   7.3
+  DFFI (FF_DATA_WIDTH1_9)              8.48e-02    4.123 2.20e+05    4.428   7.3
+  DFFJ (FF_DATA_WIDTH1_10)             5.97e-02    4.093 2.20e+05    4.373   7.2
+  DFFK (FF_DATA_WIDTH1_11)                0.109    4.138 2.20e+05    4.467   7.3
+  Mux (Mux2_1_DATA_WIDTH11)               0.456    2.995 9.16e+05    4.367   7.2
+1

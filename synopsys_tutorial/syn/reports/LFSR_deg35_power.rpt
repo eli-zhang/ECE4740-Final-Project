@@ -1,0 +1,115 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : LFSR_DegThirtyFive
+Version: R-2020.09-SP2
+Date   : Sun May 16 01:35:55 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LFSR_DegThirtyFive     8000              saed90nm_typ
+Mux2_1_DATA_WIDTH35    8000              saed90nm_typ
+FF_DATA_WIDTH1_35      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1        ForQA             saed90nm_typ
+FF_DATA_WIDTH1_0       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_1       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_2       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_3       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_4       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_5       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_6       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_7       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_8       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_9       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_10      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_11      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_12      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_13      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_14      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_15      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_16      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_17      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_18      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_19      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_20      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_21      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_22      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_23      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_24      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_25      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_26      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_27      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_28      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_29      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_30      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_31      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_32      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_33      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_34      ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+LFSR_DegThirtyFive                        3.520  160.493 1.09e+07  174.905 100.0
+  LFSRReg (FF_DATA_WIDTH1_0)           9.33e-02    4.151 2.17e+05    4.462   2.6
+  XORA (Xor_DATA_WIDTH1)               3.99e-02    0.265 6.62e+04    0.371   0.2
+  DFFA (FF_DATA_WIDTH1_1)              6.70e-02    4.185 2.20e+05    4.472   2.6
+  DFFB (FF_DATA_WIDTH1_2)              5.66e-02    4.176 2.20e+05    4.452   2.5
+  DFFC (FF_DATA_WIDTH1_3)              5.56e-02    4.175 2.20e+05    4.451   2.5
+  DFFD (FF_DATA_WIDTH1_4)              5.52e-02    4.177 2.19e+05    4.452   2.5
+  DFFE (FF_DATA_WIDTH1_5)              5.59e-02    4.172 2.20e+05    4.447   2.5
+  DFFF (FF_DATA_WIDTH1_6)              5.42e-02    4.177 2.20e+05    4.451   2.5
+  DFFG (FF_DATA_WIDTH1_7)              5.55e-02    4.177 2.20e+05    4.452   2.5
+  DFFH (FF_DATA_WIDTH1_8)              5.29e-02    4.168 2.19e+05    4.441   2.5
+  DFFI (FF_DATA_WIDTH1_9)              5.52e-02    4.172 2.20e+05    4.447   2.5
+  DFFJ (FF_DATA_WIDTH1_10)             5.43e-02    4.171 2.19e+05    4.445   2.5
+  DFFK (FF_DATA_WIDTH1_11)             5.57e-02    4.171 2.20e+05    4.447   2.5
+  DFFL (FF_DATA_WIDTH1_12)             5.42e-02    4.173 2.19e+05    4.447   2.5
+  DFFM (FF_DATA_WIDTH1_13)             5.48e-02    4.173 2.19e+05    4.447   2.5
+  DFFN (FF_DATA_WIDTH1_14)             5.50e-02    4.171 2.20e+05    4.446   2.5
+  DFFO (FF_DATA_WIDTH1_15)             5.41e-02    4.172 2.20e+05    4.446   2.5
+  DFFP (FF_DATA_WIDTH1_16)             5.50e-02    4.175 2.20e+05    4.450   2.5
+  DFFQ (FF_DATA_WIDTH1_17)             5.34e-02    4.168 2.20e+05    4.441   2.5
+  DFFR (FF_DATA_WIDTH1_18)             5.47e-02    4.176 2.20e+05    4.451   2.5
+  DFFS (FF_DATA_WIDTH1_19)             5.59e-02    4.176 2.20e+05    4.452   2.5
+  DFFT (FF_DATA_WIDTH1_20)             5.73e-02    4.177 2.20e+05    4.454   2.5
+  DFFU (FF_DATA_WIDTH1_21)             5.52e-02    4.173 2.20e+05    4.448   2.5
+  DFFV (FF_DATA_WIDTH1_22)             5.56e-02    4.174 2.20e+05    4.449   2.5
+  DFFW (FF_DATA_WIDTH1_23)             5.61e-02    4.176 2.20e+05    4.452   2.5
+  DFFX (FF_DATA_WIDTH1_24)             5.61e-02    4.177 2.21e+05    4.454   2.5
+  DFFY (FF_DATA_WIDTH1_25)             5.67e-02    4.179 2.20e+05    4.456   2.5
+  DFFZ (FF_DATA_WIDTH1_26)             5.58e-02    4.173 2.20e+05    4.448   2.5
+  DFFAA (FF_DATA_WIDTH1_27)            5.46e-02    4.180 2.20e+05    4.454   2.5
+  DFFAB (FF_DATA_WIDTH1_28)            5.59e-02    4.176 2.20e+05    4.452   2.5
+  DFFAC (FF_DATA_WIDTH1_29)            5.64e-02    4.177 2.20e+05    4.454   2.5
+  DFFAD (FF_DATA_WIDTH1_30)            5.50e-02    4.172 2.20e+05    4.446   2.5
+  DFFAE (FF_DATA_WIDTH1_31)            5.54e-02    4.174 2.20e+05    4.450   2.5
+  DFFAF (FF_DATA_WIDTH1_32)            5.46e-02    4.168 2.19e+05    4.442   2.5
+  DFFAG (FF_DATA_WIDTH1_33)            5.50e-02    4.170 2.20e+05    4.445   2.5
+  DFFAH (FF_DATA_WIDTH1_34)            5.50e-02    4.172 2.20e+05    4.447   2.5
+  DFFAI (FF_DATA_WIDTH1_35)            7.99e-02    4.204 2.20e+05    4.503   2.6
+  Mux (Mux2_1_DATA_WIDTH35)               1.417    9.949 2.92e+06   14.281   8.2
+1

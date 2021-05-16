@@ -1,0 +1,185 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : LFSR_DegThirtyFive
+Version: R-2020.09-SP2
+Date   : Sun May 16 01:35:13 2021
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: DFFAE/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: DFFAE/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LFSR_DegThirtyFive 8000                  saed90nm_typ
+  FF_DATA_WIDTH1_31  ForQA                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAE/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  DFFAE/Q_DO_reg[0]/Q (DFFARX1)            0.22       0.22 f
+  DFFAE/U2/Q (MUX21X1)                     0.11       0.33 f
+  DFFAE/Q_DO_reg[0]/D (DFFARX1)            0.03       0.35 f
+  data arrival time                                   0.35
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAE/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: DFFAD/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: DFFAD/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LFSR_DegThirtyFive 8000                  saed90nm_typ
+  FF_DATA_WIDTH1_30  ForQA                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAD/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  DFFAD/Q_DO_reg[0]/Q (DFFARX1)            0.22       0.22 f
+  DFFAD/U2/Q (MUX21X1)                     0.11       0.33 f
+  DFFAD/Q_DO_reg[0]/D (DFFARX1)            0.03       0.35 f
+  data arrival time                                   0.35
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAD/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: DFFAC/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: DFFAC/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LFSR_DegThirtyFive 8000                  saed90nm_typ
+  FF_DATA_WIDTH1_29  ForQA                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAC/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  DFFAC/Q_DO_reg[0]/Q (DFFARX1)            0.22       0.22 f
+  DFFAC/U2/Q (MUX21X1)                     0.11       0.33 f
+  DFFAC/Q_DO_reg[0]/D (DFFARX1)            0.03       0.35 f
+  data arrival time                                   0.35
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAC/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: DFFAB/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: DFFAB/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LFSR_DegThirtyFive 8000                  saed90nm_typ
+  FF_DATA_WIDTH1_28  ForQA                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAB/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  DFFAB/Q_DO_reg[0]/Q (DFFARX1)            0.22       0.22 f
+  DFFAB/U2/Q (MUX21X1)                     0.11       0.33 f
+  DFFAB/Q_DO_reg[0]/D (DFFARX1)            0.03       0.35 f
+  data arrival time                                   0.35
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAB/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: DFFAA/Q_DO_reg[0]
+              (rising edge-triggered flip-flop clocked by Clk_CI)
+  Endpoint: DFFAA/Q_DO_reg[0]
+            (rising edge-triggered flip-flop clocked by Clk_CI)
+  Path Group: Clk_CI
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LFSR_DegThirtyFive 8000                  saed90nm_typ
+  FF_DATA_WIDTH1_27  ForQA                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAA/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  DFFAA/Q_DO_reg[0]/Q (DFFARX1)            0.22       0.22 f
+  DFFAA/U2/Q (MUX21X1)                     0.11       0.33 f
+  DFFAA/Q_DO_reg[0]/D (DFFARX1)            0.03       0.35 f
+  data arrival time                                   0.35
+
+  clock Clk_CI (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  DFFAA/Q_DO_reg[0]/CLK (DFFARX1)          0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+1

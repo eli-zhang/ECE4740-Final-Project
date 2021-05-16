@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : area
+Design : LFSR_DegThirtyFive
+Version: R-2020.09-SP2
+Date   : Sun May 16 01:35:34 2021
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                          329
+Number of nets:                           436
+Number of cells:                          146
+Number of combinational cells:             72
+Number of sequential cells:                36
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                      38
+
+Combinational area:                799.027221
+Buf/Inv area:                        0.000000
+Noncombinational area:            1161.216019
+Macro/Black Box area:                0.000000
+Net Interconnect area:             118.815418
+
+Total cell area:                  1960.243239
+Total area:                       2079.058658
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------
+LFSR_DegThirtyFive                1960.2432    100.0    0.0000     0.0000  0.0000  LFSR_DegThirtyFive
+DFFA                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_1
+DFFAA                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_27
+DFFAB                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_28
+DFFAC                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_29
+DFFAD                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_30
+DFFAE                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_31
+DFFAF                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_32
+DFFAG                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_33
+DFFAH                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_34
+DFFAI                               43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_35
+DFFB                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_2
+DFFC                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_3
+DFFD                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_4
+DFFE                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_5
+DFFF                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_6
+DFFG                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_7
+DFFH                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_8
+DFFI                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_9
+DFFJ                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_10
+DFFK                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_11
+DFFL                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_12
+DFFM                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_13
+DFFN                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_14
+DFFO                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_15
+DFFP                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_16
+DFFQ                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_17
+DFFR                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_18
+DFFS                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_19
+DFFT                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_20
+DFFU                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_21
+DFFV                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_22
+DFFW                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_23
+DFFX                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_24
+DFFY                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_25
+DFFZ                                43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_26
+LFSRReg                             43.3152      2.2   11.0592    32.2560  0.0000  FF_DATA_WIDTH1_0
+Mux                                387.0720     19.7  387.0720     0.0000  0.0000  Mux2_1_DATA_WIDTH35
+XORA                                13.8240      0.7   13.8240     0.0000  0.0000  Xor_DATA_WIDTH1
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------
+Total                                                 799.0272  1161.2160  0.0000
+
+1
