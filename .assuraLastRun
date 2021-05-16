@@ -1,2 +1,2 @@
 runDir = .
-runName = dff_dynamic_reset
+runName = inv_clk_dff

@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"inv_clk_dff layout finalProject" "inv_clk_dff schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

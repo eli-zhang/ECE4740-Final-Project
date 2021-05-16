@@ -1,0 +1,99 @@
+*
+*
+*
+*                       LINUX           Wed May 12 17:48:13 2021
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  Name           : advgen - Quantus - (64-bit)
+*  Version        : 20.1.2-p025
+*  Build Date     : Thu Sep 3 13:54:09 PDT 2020
+*
+*  HSPICE LIBRARY
+*
+*!LENGTH_UNITS METERS
+*
+*
+*
+
+*
+.SUBCKT inv_clk_dff vdd! gnd! Vin Vout
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	Vout#6	Vin#1	gnd!	gnd!#1	nmos1v#20ivpcell#20gpdk090	L=1e-07
++ W=4e-07
++ AD=6.4e-14	AS=7.36e-14	PD=7.2e-07	PS=8.48e-07	M=10
++ simW=4e-07 fw=4e-07
+MavD7_1	Vout#1	Vin#1	vdd!	vdd!#1	pmos1v#20ivpcell#20gpdk090	L=1e-07
++ W=7e-07
++ AD=1.12e-13	AS=1.288e-13	PD=1.02e-06	PS=1.208e-06	M=10
++ simW=7e-07 fw=7e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Ri46	gnd!#1	gnd!	   15.0538	$mt1	$X=5.49 $Y=0.24
+Ri59	gnd!#1	gnd!	   15.0538	$mt1	$X=2.87 $Y=0.08
+Ri66	vdd!#1	vdd!	   15.0765	$mt1	$X=5.44 $Y=2.74
+Ri68	vdd!	vdd!#4	    0.1533	$mt1	$X=4.97 $Y=2.07
+Ri69	vdd!#4	vdd!	   15.1533	$mt1	$X=4.97 $Y=2.07
+Ri71	vdd!	vdd!#7	    0.1533	$mt1	$X=4.13 $Y=2.07
+Ri72	vdd!#7	vdd!	   15.1533	$mt1	$X=4.13 $Y=2.07
+Ri74	vdd!	vdd!#10	    0.1533	$mt1	$X=3.29 $Y=2.07
+Ri75	vdd!#10	vdd!	   15.1533	$mt1	$X=3.29 $Y=2.07
+Ri77	vdd!	vdd!#13	    0.1533	$mt1	$X=2.45 $Y=2.07
+Ri78	vdd!#13	vdd!	   15.1533	$mt1	$X=2.45 $Y=2.07
+Ri80	vdd!	vdd!#16	    0.1533	$mt1	$X=1.61 $Y=2.07
+Ri81	vdd!#16	vdd!	   15.1533	$mt1	$X=1.61 $Y=2.07
+Ri83	vdd!	vdd!#19	    0.1533	$mt1	$X=0.77 $Y=2.07
+Ri84	vdd!#19	vdd!	   15.1533	$mt1	$X=0.77 $Y=2.07
+Ri85	vdd!#1	vdd!	   15.0765	$mt1	$X=0.3 $Y=2.87
+Ri1	Vin#1	Vin	    2.9400	$mt1	$X=1.6405 $Y=1.2
+Ri2	Vout#2	Vout#3	    0.1533	$mt1	$X=4.55 $Y=2.07
+Ri3	Vout#1	Vout#3	    0.1533	$mt1	$X=4.55 $Y=2.07
+Ri5	Vout#1	Vout	    0.2236	$mt1	$X=4.55 $Y=1.37
+Ri6	Vout#6	Vout	    0.2203	$mt1	$X=4.55 $Y=1.033
+Ri16	Vout#1	Vout#18	    0.1533	$mt1	$X=1.19 $Y=2.07
+Ri17	Vout#18	Vout#1	   15.1533	$mt1	$X=1.19 $Y=2.07
+Ri27	Vout#1	Vout#33	    0.1533	$mt1	$X=3.71 $Y=2.07
+Ri28	Vout#33	Vout#1	   15.1533	$mt1	$X=3.71 $Y=2.07
+Ri30	Vout#1	Vout#36	    0.1533	$mt1	$X=2.87 $Y=2.07
+Ri31	Vout#36	Vout#1	   15.1533	$mt1	$X=2.87 $Y=2.07
+Ri33	Vout#1	Vout#39	    0.1533	$mt1	$X=2.03 $Y=2.07
+Ri34	Vout#39	Vout#1	   15.1533	$mt1	$X=2.03 $Y=2.07
+Ri35	Vout#2	Vout#1	   15.0000	$mt1	$X=4.55 $Y=2.3
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Vin	gnd!#1	1.08094e-17	$X=1.2845 $Y=1.1995
+C2	Vin	vdd!#1	1.13638e-17	$X=1.307 $Y=1.2175
+C3	Vout	gnd!#1	8.62226e-18	$X=4.549 $Y=1.201
+C4	Vout	vdd!#1	8.90903e-18	$X=4.5415 $Y=1.2075
+C5	vdd!	Vin#1	2.5946e-16	$X=2.8655 $Y=2.0155
+C6	vdd!	Vout#1	4.24055e-16	$X=2.93 $Y=2.018
+C7	Vin#1	Vout	9.54952e-18	$X=4.548 $Y=1.201
+C8	Vin	Vout#1	3.41144e-17	$X=1.306 $Y=1.2085
+C9	Vout#6	Vin#1	3.24334e-16	$X=2.96 $Y=0.665
+C10	Vout#1	Vin#1	3.7602e-16	$X=2.9565 $Y=1.82
+C11	Vout#6	gnd!#1	3.11924e-17	$X=2.971 $Y=0.6085
+C12	Vout#1	vdd!#1	2.23411e-17	$X=2.955 $Y=2.227
+C13	Vout#6	Vin	3.467e-17	$X=1.314 $Y=1.189
+C14	Vin#1	gnd!#1	3.34757e-16	$X=2.858 $Y=1.291
+C15	Vin#1	vdd!#1	3.47469e-16	$X=2.929 $Y=2.373
+C16	vdd!	gnd!	3.81934e-18	$X=2.8675 $Y=1.148
+C17	Vin	gnd!	3.04981e-18	$X=1.304 $Y=1.19
+C18	Vin#1	gnd!	1.9134e-16	$X=2.866 $Y=0.546
+C19	Vout#6	gnd!	3.44877e-16	$X=2.9285 $Y=0.5335
+*
+*
+.ENDS inv_clk_dff
+*

@@ -1,0 +1,39 @@
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "Final_MUX_1 schematic finalProject" "Final_MUX_1 layout finalProject"
+N net6 avC11
+N net2 avC8
+N net1 avC9
+N net3 avC10
+N net4 avC7
+N vdd vdd
+N gnd gnd
+N in1 in1
+N in2 in2
+N s s
+N out out
+I PM6 avD7_15
+I PM5 avD7_23
+I PM4 avD7_7
+I PM3 avD7_1
+I PM2 avD7_24
+I PM1 avD7_8
+I PM0 avD7_16
+I NM6 avD1_27
+I NM5 avD1_17
+I NM4 avD1_7
+I NM3 avD1_1
+I NM2 avD1_28
+I NM1 avD1_18
+I NM0 avD1_8
+
