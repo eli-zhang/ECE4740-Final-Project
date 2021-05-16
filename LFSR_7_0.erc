@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'LFSR_7_0 layout finalProject':
+  info: Assign pin label "7_B0" at (0.2400, 4.8200) to layer `Metal1_p'.
+  info: Assign pin label "gnd!" at (13.7275, 0.0800) to layer `Metal1_p'.
+  info: Assign pin label "vdd!" at (13.4000, 3.0400) to layer `Metal1_p'.
+  info: Assign pin label "Set" at (14.3950, 2.6350) to layer `Metal1_p'.
+  info: Assign pin label "CLK" at (16.8100, 1.2000) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

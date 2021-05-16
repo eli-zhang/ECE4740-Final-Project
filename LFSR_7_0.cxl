@@ -1,0 +1,134 @@
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "inv_min_x4 schematic finalProject" "inv_min_x4 layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_min_x2 schematic finalProject" "inv_min_x2 layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_min schematic finalProject" "inv_min layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_clk_dff schematic finalProject" "inv_clk_dff layout finalProject"
+N Vin avC2
+N Vout avC4
+N vdd! avC3
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "xor_regular schematic finalProject" "xor_regular layout finalProject"
+N vpd avC5
+N drains avC7
+N A avC3
+N B avC2
+N Y avC6
+N vdd! avC4
+N gnd! avT557_1
+I NM4 avD1_3
+I NM3 avD1_5
+I NM2 avD1_1
+I NM1 avD1_2
+I NM0 avD1_4
+I PM3 avD7_4
+I PM2 avD7_1
+I PM1 avD7_2
+I PM0 avD7_3
+
+C "mux_2_1 schematic finalProject" "mux_2_1 layout finalProject"
+N A avC6
+N B avC7
+N SEL avC4
+N !SEL avC2
+N Y avC3
+N gnd! avT557_1
+I NM1 avD1_1
+I NM0 avD1_2
+I PM1 avD7_2
+I PM0 avD7_1
+
+C "dff_dynamic schematic finalProject" "dff_dynamic layout finalProject"
+N QM avC7
+N D avC2
+N CLK avC4
+N !CLK avC3
+N Q avC6
+N vdd! avC5
+N gnd! avT557_1
+I NM5 avD1_3
+I NM4 avD1_5
+I NM1 avD1_1
+I NM0 avD1_2
+I PM5 avD7_5
+I PM4 avD7_3
+I PM1 avD7_2
+I PM0 avD7_1
+
+C "dff_dynamic_reset schematic finalProject" "dff_dynamic_reset layout finalProject"
+N QDFF avC10
+N D avC2
+N CLK avC4
+N !CLK avC3
+N R avC5
+N Set avC9
+N !Set avC7
+N Q avC8
+N gnd! avT557_1
+I I0 I0
+I I1 I1
+
+C "LFSR_7_0 schematic finalProject" "LFSR_7_0 layout finalProject"
+N !Set avC9
+N !7_B0 avC7
+N vo7 avC11
+N !CLK0 avC6
+N vo1 avC10
+N vi2 avC12
+N vo6 avC13
+N vo5 avC14
+N vo4 avC15
+N vo3 avC16
+N vo2 avC8
+N CLK CLK
+N Set Set
+N 7_B0 7_B0
+N vdd! vdd!
+N gnd! gnd!
+I I18 I18
+I I16 I16
+I I15 I15
+I I14 I14
+I I13 I13
+I I6 I6
+I I17 I17
+I I33 I33
+I I294 I294
+I I7 I7
+I I11 I11
+I I19 I19
+

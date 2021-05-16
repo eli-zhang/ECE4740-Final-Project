@@ -1,0 +1,10 @@
+!<alc> v1 37
+0   12    0 mux_2_1 layout finalProject
+0   11    0 dff_dynamic layout finalProject
+0   33    0 xor_regular layout finalProject
+0   32    0 inv_min_x4 layout finalProject
+0   31    0 inv_min_x2 layout finalProject
+0   30    0 inv_min layout finalProject
+0   29    0 inv_clk_dff layout finalProject
+0   28    0 dff_dynamic_reset layout finalProject
+0   34    0 LFSR_7_0 layout finalProject

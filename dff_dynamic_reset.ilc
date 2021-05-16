@@ -8,6 +8,6 @@ gpdk090 pmos1v layout 142
 gpdk090 pmos1v layout 142
 gpdk090 pmos1v layout 142
 gpdk090 pmos1v layout 142
-finalProject dff_dynamic layout 6110
-finalProject mux_2_1 layout 4345
-finalProject dff_dynamic_reset layout 1104
+finalProject dff_dynamic layout 6152
+finalProject mux_2_1 layout 4495
+finalProject dff_dynamic_reset layout 1215

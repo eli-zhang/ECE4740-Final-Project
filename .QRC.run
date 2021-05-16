@@ -3,4 +3,4 @@
 # THE RUN FILE created by Cadence Extraction Quantus UI Version 20.1.2-p025
 #--------------------------------------------------------------------------------------
 
-qrc  -log_file /home/hpl23/ECE4740-Final-Project/qrc.inv_clk_dff.log -cmd /home/hpl23/ECE4740-Final-Project/qrc.inv_clk_dff.ccl 
+qrc  -log_file /home/hpl23/ECE4740-Final-Project/qrc.LFSR_7_0.log -cmd /home/hpl23/ECE4740-Final-Project/qrc.LFSR_7_0.ccl 
