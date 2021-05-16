@@ -1,15 +1,15 @@
 /*
- * LFSR_Deg7.v
- * LFSR of Degree 7 
- * 	Implementing Primitive Polynomial: x^7 + x^1 + 1
+ * LFSR_Deg8.v
+ * LFSR of Degree 8 
+ * 	Implementing Primitive Polynomial: x^8 + x^7 + x^6 + x^5 + x^2 + x^1 + 1
  *
  * Author: Greg George
- * Last update: May 4, 2021
+ * Last update: May 14, 2021
  */
 
-module LFSR_DegSeven_One
+module LFSR_DegEight_One
 #(
-   parameter DEGREE = 7 // Degree of LFSR
+   parameter DEGREE = 8 // Degree of LFSR
 )
 (
    input Clk_CI, // Clock input
@@ -22,7 +22,8 @@ module LFSR_DegSeven_One
    output LFSR_DO // Output of LFSR
 );
 
-wire tap_A, LFSR_Out;
+wire tap_A, out_8_7, out_87_6, out_876_5, out_8765_2;
+wire LFSR_Out;
 wire [DEGREE-1:0] LFSR_Mux_In, LFSR_Mux_Out;
 
 ////////////////////////
@@ -44,7 +45,18 @@ wire [DEGREE-1:0] LFSR_Mux_In, LFSR_Mux_Out;
 // LFSR registers
 ////////////////////////
 
-// 7 DFF forming the LFSR. DFFG is the MSB and DFFA is the LSB
+// 8 DFF forming the LFSR. DFFH is the MSB and DFFA is the LSB
+ FF #(
+   .DATA_WIDTH ( 1 )
+ )
+ DFFH
+ (
+   .Clk_CI  ( Clk_CI  ),
+   .Rst_RBI ( Rst_RBI ),
+   .WrEn_SI ( WrEn_SI ),
+   .D_DI    ( LFSR_Mux_Out[7]),
+   .Q_DO    ( LFSR_Mux_In[6])
+ );
 
  FF #(
    .DATA_WIDTH ( 1 )
@@ -137,14 +149,64 @@ wire [DEGREE-1:0] LFSR_Mux_In, LFSR_Mux_Out;
  Xor #(
    .DATA_WIDTH ( 1 )
  )
- XOR
+ XORA
+ (
+   .A_DI    ( LFSR_Mux_In[0]),
+   .B_DI    ( tap_A),
+   .Xor_DO  ( out_8_7)
+ );
+
+ Xor #(
+   .DATA_WIDTH ( 1 )
+ )
+ XORB
+ (
+   .A_DI    ( LFSR_Mux_In[1]),
+   .B_DI    ( out_8_7),
+   .Xor_DO  ( out_87_6)
+ );
+
+ Xor #(
+   .DATA_WIDTH ( 1 )
+ )
+ XORC
+ (
+   .A_DI    ( LFSR_Mux_In[2]),
+   .B_DI    ( out_87_6),
+   .Xor_DO  ( out_876_5)
+ );
+
+ Xor #(
+   .DATA_WIDTH ( 1 )
+ )
+ XORD
  (
    .A_DI    ( LFSR_Mux_In[5]),
-   .B_DI    ( tap_A),
+   .B_DI    ( out_876_5),
+   .Xor_DO  ( out_8765_2)
+ );
+
+ Xor #(
+   .DATA_WIDTH ( 1 )
+ )
+ XORE
+ (
+   .A_DI    ( LFSR_Mux_In[6]),
+   .B_DI    ( out_8765_2),
    .Xor_DO  ( LFSR_Out)
  );
 
- assign LFSR_Mux_In[6] = LFSR_Out;
+ Xor #(
+   .DATA_WIDTH ( 1 )
+ )
+ XORF
+ (
+   .A_DI    ( LFSR_Mux_In[6]),
+   .B_DI    ( out_87652_1),
+   .Xor_DO  ( out_87652_1)
+ );
+
+ assign LFSR_Mux_In[7] = LFSR_Out;
 
  ////////////////////////
  // Output registers

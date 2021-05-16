@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : LFSR_DegEight_One
+Version: R-2020.09-SP2
+Date   : Sat May 15 22:53:33 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ (File: /classes/ece4740/saed-90nm/pkgs/SAED_EDK90nm_01252011/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LFSR_DegEight_One      8000              saed90nm_typ
+Mux2_1_DATA_WIDTH8     ForQA             saed90nm_typ
+FF_DATA_WIDTH1_8       ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_5      ForQA             saed90nm_typ
+FF_DATA_WIDTH1_0       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_1       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_2       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_3       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_4       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_5       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_6       ForQA             saed90nm_typ
+FF_DATA_WIDTH1_7       ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_1      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_2      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_3      ForQA             saed90nm_typ
+Xor_DATA_WIDTH1_4      ForQA             saed90nm_typ
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+LFSR_DegEight_One                         1.304   40.670 2.98e+06   44.957 100.0
+  LFSRReg (FF_DATA_WIDTH1_0)              0.132    4.116 2.19e+05    4.468   9.9
+  XORE (Xor_DATA_WIDTH1_1)             5.53e-02    0.338 6.64e+04    0.460   1.0
+  XORD (Xor_DATA_WIDTH1_2)             4.45e-02    0.330 6.65e+04    0.441   1.0
+  XORC (Xor_DATA_WIDTH1_3)             4.17e-02    0.320 6.64e+04    0.428   1.0
+  XORB (Xor_DATA_WIDTH1_4)             3.97e-02    0.301 6.64e+04    0.408   0.9
+  XORA (Xor_DATA_WIDTH1_5)             3.66e-02    0.292 6.65e+04    0.395   0.9
+  DFFA (FF_DATA_WIDTH1_1)              7.25e-02    4.097 2.21e+05    4.390   9.8
+  DFFB (FF_DATA_WIDTH1_2)              8.77e-02    4.109 2.21e+05    4.417   9.8
+  DFFC (FF_DATA_WIDTH1_3)              8.40e-02    4.106 2.20e+05    4.411   9.8
+  DFFD (FF_DATA_WIDTH1_4)              8.67e-02    4.112 2.21e+05    4.419   9.8
+  DFFE (FF_DATA_WIDTH1_5)              5.90e-02    4.078 2.21e+05    4.358   9.7
+  DFFF (FF_DATA_WIDTH1_6)              5.72e-02    4.070 2.20e+05    4.347   9.7
+  DFFG (FF_DATA_WIDTH1_7)              8.76e-02    4.110 2.21e+05    4.418   9.8
+  DFFH (FF_DATA_WIDTH1_8)              8.63e-02    4.113 2.21e+05    4.420   9.8
+  Mux (Mux2_1_DATA_WIDTH8)                0.333    2.178 6.66e+05    3.177   7.1
+1
