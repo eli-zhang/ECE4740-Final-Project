@@ -13,4 +13,6 @@ swapPins("mux_2_1" "")
 
 swapPins("dff_dynamic" "")
 
+swapPins("dff_dynamic_reset" "")
+
 swapPins("xor_regular" "")

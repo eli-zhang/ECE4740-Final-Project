@@ -1,6 +1,0 @@
-; Assura generated file -- DO NOT EDIT --
-; Do NOT rely on the content of this file, it may change.
-;
-2 device net parameter pin rewire total
-8  5 (( ( S "dff_dynamic_reset layout finalProject" )( L "dff_dynamic_reset schematic finalProject" ) )(( 3 0 1 )( 1 1 0 )))
-1  5 (( ( S "LFSR_8_0 layout finalProject" )( L "LFSR_8_0 schematic finalProject" ) )(( 1 11 1 )))

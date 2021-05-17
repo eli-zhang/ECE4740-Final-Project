@@ -12,8 +12,6 @@ none matched expanded errors param_err pin_err empty_sch empty_lay not_run
 27 inv_min layout finalProject 5 30 inv_min schematic finalProject 1 0
 27 mux_2_1 layout finalProject 6 30 mux_2_1 schematic finalProject 1 0
 31 dff_dynamic layout finalProject 7 34 dff_dynamic schematic finalProject 1 0
-37 dff_dynamic_reset layout finalProject 8 0 0 0 0 129 4 198 3 138 7 142
-37 dff_dynamic_reset layout finalProject 8 40 dff_dynamic_reset schematic finalProject 2 0
+37 dff_dynamic_reset layout finalProject 8 40 dff_dynamic_reset schematic finalProject 1 0
 31 xor_regular layout finalProject 9 34 xor_regular schematic finalProject 1 0
-28 LFSR_8_0 layout finalProject 1 0 0 0 0 220 3 190 3 212 3 273 3 334 3 395 3 456 3 517 3 578 3 639 3 700 3 755 7 267
-28 LFSR_8_0 layout finalProject 1 31 LFSR_8_0 schematic finalProject 3 0
+28 LFSR_8_0 layout finalProject 1 31 LFSR_8_0 schematic finalProject 1 0

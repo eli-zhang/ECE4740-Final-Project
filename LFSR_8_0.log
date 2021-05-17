@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:24 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Sun May 16 22:48:34 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/assura on Mon May 17 00:51:12 2021
 
 
 Starting /opt/cadence/assura//tools.lnx86/assura/bin/aveng /home/hpl23/ECE4740-Final-Project/LFSR_8_0.rsf -exec1 -LVS -cdslib /home/hpl23/ECE4740-Final-Project/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:25 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Sun May 16 22:48:35 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon May 17 00:51:12 2021
 
 
 Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRuleSets
@@ -42,7 +42,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:28 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Sun May 16 22:48:36 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVdb on Mon May 17 00:51:14 2021
 
 
 Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRuleSets
@@ -116,7 +116,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:29 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
-run on en-ec-ecelinux-08.coecis.cornell.edu at Sun May 16 22:48:40 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu at Mon May 17 00:51:17 2021
   
 *************************************************************** 
   
@@ -134,7 +134,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:28 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Sun May 16 22:48:41 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/dfIIToVldb on Mon May 17 00:51:18 2021
 
   
 *************************************************************** 
@@ -215,7 +215,7 @@ Executing: bulk = cellBoundary(root)
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.10  elap: 7  pf: 0  in: 2584  out: 152  virt: 101M  phys: 512M
+cpu: 0.11  elap: 7  pf: 0  in: 80  out: 152  virt: 101M  phys: 512M
 
 Running the Task Processor, 9 cells, 2658 steps...
 
@@ -1400,12 +1400,12 @@ Executing: (saveInterconnect (npn_emit "Nimp"))
 Executing: (saveInterconnect (npn_coll "Nwell"))
 
 Finished running rules. Task processor time in main process:
-cpu: 0.31  elap: 1  pf: 0  in: 16  out: 760  virt: 145M  phys: 656M
+cpu: 0.31  elap: 1  pf: 0  in: 0  out: 672  virt: 145M  phys: 656M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6448  virt: 150M  phys: 669M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6448  virt: 150M  phys: 668M
 
 
 *****  aveng terminated normally  *****
@@ -1423,7 +1423,7 @@ Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRul
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:25 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Sun May 16 22:48:44 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avrpt on Mon May 17 00:51:21 2021
 
 
    Creating Error Database 'LFSR_8_0'...
@@ -1555,7 +1555,7 @@ Total  errors:                                               0            0
 
    Writing Report into ./LFSR_8_0.err ...
 
-avrpt cpu sec:    0.07  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.08  elapsed:     0  virtual:    93M
 
 Finished /opt/cadence/assura//tools.lnx86/assura/bin/avrpt
 
@@ -1570,7 +1570,7 @@ Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRul
 Finished /opt/cadence/assura//tools.lnx86/assura/bin/avcallproc
 
 Starting /opt/cadence/assura//tools.lnx86/assura/bin/avnx /home/hpl23/ECE4740-Final-Project/LFSR_8_0.rsf -exec1 -LVS -cdslib /home/hpl23/ECE4740-Final-Project/cds.lib
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
 
 Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRuleSets
 
@@ -1583,18 +1583,18 @@ Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: avnx_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:25 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Sun May 16 22:48:45 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/avnx on Mon May 17 00:51:23 2021
 
 avnx started...
-cpu: 0.07  elap: 1  pf: 0  in: 88  out: 40  virt: 549M  phys: 801M
+cpu: 0.10  elap: 0  pf: 0  in: 96  out: 40  virt: 549M  phys: 801M
 
-Run time =  1.00 seconds
-CPU time =  0.10 seconds
+Run time =  0.00 seconds
+CPU time =  0.13 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 13048  virt: 479M  phys: 801M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 13032  virt: 479M  phys: 801M
 ***** avnx terminated normally ***** 
 
 
@@ -1605,7 +1605,7 @@ Checking out license for Assura_LVS
 Checking out license for Phys_Ver_Sys_LVS_XL
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:29 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
-run on en-ec-ecelinux-08.coecis.cornell.edu at Sun May 16 22:48:47 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu at Mon May 17 00:51:24 2021
   
 *************************************************************** 
   
@@ -1727,96 +1727,6 @@ Comparing inv_clk_dff schematic finalProject vs inv_clk_dff layout finalProject
    1st device: L = 1e-07 W = 6.3e-06 m = 1 
    2nd device: L = 1e-07 W = 7e-07 m = 1 
    Resulting: L = 1e-07 W = 7e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 4e-07 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 8e-07 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 8e-07 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 1.2e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 1.2e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 1.6e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 1.6e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 2e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 2e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 2.4e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 2.4e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 2.8e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 2.8e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 3.2e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 3.2e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 3.6e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 3.6e-06 m = 1 
-   2nd device: L = 1e-07 W = 4e-07 m = 1 
-   Resulting: L = 1e-07 W = 4e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 7e-07 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 1.4e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 1.4e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 2.1e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 2.1e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 2.8e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 2.8e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 3.5e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 3.5e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 4.2e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 4.2e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 4.9e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 4.9e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 5.6e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 5.6e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 6.3e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 6.3e-06 m = 1 
-   2nd device: L = 1e-07 W = 7e-07 m = 1 
-   Resulting: L = 1e-07 W = 7e-06 m = 1 
 Comparing inv_min schematic finalProject vs inv_min layout finalProject
 Comparing mux_2_1 schematic finalProject vs mux_2_1 layout finalProject
 Comparing dff_dynamic schematic finalProject vs dff_dynamic layout finalProject
@@ -1840,30 +1750,10 @@ Comparing dff_dynamic schematic finalProject vs dff_dynamic layout finalProject
    1st device: L = 1e-07 W = 8.4e-07 m = 1 
    2nd device: L = 1e-07 W = 8.4e-07 m = 1 
    Resulting: L = 1e-07 W = 1.68e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 4.2e-07 m = 1 
-   2nd device: L = 1e-07 W = 4.2e-07 m = 1 
-   Resulting: L = 1e-07 W = 8.4e-07 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 4.2e-07 m = 1 
-   2nd device: L = 1e-07 W = 4.2e-07 m = 1 
-   Resulting: L = 1e-07 W = 8.4e-07 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 8.4e-07 m = 1 
-   2nd device: L = 1e-07 W = 8.4e-07 m = 1 
-   Resulting: L = 1e-07 W = 1.68e-06 m = 1 
-
-** Parallel MOS combined: 
-   1st device: L = 1e-07 W = 8.4e-07 m = 1 
-   2nd device: L = 1e-07 W = 8.4e-07 m = 1 
-   Resulting: L = 1e-07 W = 1.68e-06 m = 1 
 Comparing dff_dynamic_reset schematic finalProject vs dff_dynamic_reset layout finalProject
 Comparing xor_regular schematic finalProject vs xor_regular layout finalProject
 Top cell  LFSR_8_0 schematic finalProject vs LFSR_8_0 layout finalProject
-Compare errors, please see LFSR_8_0.csm and LFSR_8_0.cls files.
+Schematic and Layout Match
 cpu=0.00m  wall=0.00m  mem=72.75mb
 
 Finished /opt/cadence/assura//tools.lnx86/assura/bin/nvn
@@ -1877,7 +1767,7 @@ Starting /opt/cadence/assura//tools.lnx86/assura/bin/vldbToRpa LFSR_8_0.lnn LFSR
 Finished /opt/cadence/assura//tools.lnx86/assura/bin/vldbToRpa
 
 Starting /opt/cadence/assura//tools.lnx86/assura/bin/ercChk /home/hpl23/ECE4740-Final-Project/LFSR_8_0.rsf
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
 
 Loading tech rule set file : /opt/cadence-designkits/gpdk090_v3.9/assura/techRuleSets
 
@@ -1937,7 +1827,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Sun May 16 22:48:50 2021
+Run ended: Mon May 17 00:51:28 2021
 
 *****  Assura terminated normally  *****
 

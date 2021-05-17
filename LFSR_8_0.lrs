@@ -1,23 +1,20 @@
 @(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:29 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
-run on en-ec-ecelinux-08.coecis.cornell.edu at Sun May 16 22:48:47 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu at Mon May 17 00:51:24 2021
 
 Schematic                               | Layout                               | Status
-------------------------------------------------------------------------------------------
-inv_min_x2.5 schematic finalProject     | inv_min_x2.5 layout finalProject     | matched 
-inv_min_x4 schematic finalProject       | inv_min_x4 layout finalProject       | matched 
-inv_clk_dff schematic finalProject      | inv_clk_dff layout finalProject      | matched 
-inv_min schematic finalProject          | inv_min layout finalProject          | matched 
-mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched 
-dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched 
-dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| expanded
-xor_regular schematic finalProject      | xor_regular layout finalProject      | matched 
-LFSR_8_0 schematic finalProject         | LFSR_8_0 layout finalProject         | errors   *
+-----------------------------------------------------------------------------------------
+inv_min_x2.5 schematic finalProject     | inv_min_x2.5 layout finalProject     | matched
+inv_min_x4 schematic finalProject       | inv_min_x4 layout finalProject       | matched
+inv_clk_dff schematic finalProject      | inv_clk_dff layout finalProject      | matched
+inv_min schematic finalProject          | inv_min layout finalProject          | matched
+mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched
+dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched
+dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| matched
+xor_regular schematic finalProject      | xor_regular layout finalProject      | matched
+LFSR_8_0 schematic finalProject         | LFSR_8_0 layout finalProject         | matched
 
-Mismatch between Schematic and Layout
-   1 cell with errors
-   1 cell expanded
-   7 cells matched
+Schematic and Layout Match
 
 Schematic:
   Library:finalProject
@@ -39,8 +36,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     2 cells have 12 Net mismatches
+     0 cells have 0 Net mismatches
      0 cells have 0 Device mismatches
-     1 cells have 1 Pin mismatches
+     0 cells have 0 Pin mismatches
      0 cells have 0 Parameter mismatches
 
