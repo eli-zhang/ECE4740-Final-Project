@@ -32,12 +32,12 @@ vuiLVSFormTable = '(
 	avCompareView  nil
 	additionalFunctionsButton  nil
 	schLibrary  "finalProject"
-	schCell  "LFSR_8_0"
+	schCell  "LFSR_9_0"
 	schView  "schematic"
 	existingSchNetlist  nil
 	useVerilogTopCell  nil
 	layLibrary  "finalProject"
-	layCell  "LFSR_8_0"
+	layCell  "LFSR_9_0"
 	layView  "layout"
 	layUseExistingNL  nil
 	extractButton  nil

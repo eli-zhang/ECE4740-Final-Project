@@ -1,7 +1,7 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 10/27/2020 22:20 (sjfhw691) $
 \o Sub version:		sub-version  s154 
-\o Arguments:		-unmapped -mpssession virtuoso482 -mpshost en-ec-ecelinux-08.coecis.cornell.edu 
-\o Working Directory:	en-ec-ecelinux-08.coecis.cornell.edu:/home/hpl23/ECE4740-Final-Project
+\o Arguments:		-unmapped -mpssession virtuoso62429 -mpshost en-ec-ecelinux-04.coecis.cornell.edu 
+\o Working Directory:	en-ec-ecelinux-04.coecis.cornell.edu:/home/hpl23/ECE4740-Final-Project
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o changeWorkingDir("/home/hpl23/ECE4740-Final-Project") unnecessary.
@@ -18,76 +18,48 @@
 \a nrResizeWindow(cdsLibManager list(0 31 1273 589))
 \a cdsLibManager->libListBox->value = "finalProject"
 \a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
-\w LIB ece4740 from the same file (defined earlier.)
-\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
-\w LIB ece4740 from the same file (defined earlier.)
-\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "LFSR_7_1"
-\a cdsLibManager->cellLineEdit->value = "LFSR_7_1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "LFSR_7_0"
 \a cdsLibManager->cellLineEdit->value = "LFSR_7_0"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Final_MUX"
+\a cdsLibManager->cellLineEdit->value = "Final_MUX"
+\a cdsLibManager->cellListBox->value = "LFSR_7_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_0"
+\a cdsLibManager->cellListBox->value = "LFSR_7_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_1"
+\a cdsLibManager->cellListBox->value = "LFSR_7_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_2"
+\a cdsLibManager->cellListBox->value = "LFSR_7_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_3"
+\a cdsLibManager->cellListBox->value = "LFSR_8_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
+\a cdsLibManager->cellListBox->value = "LFSR_8_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_1"
+\a cdsLibManager->cellListBox->value = "LFSR_8_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_2"
+\a cdsLibManager->cellListBox->value = "LFSR_8_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_3"
+\a cdsLibManager->cellListBox->value = "LFSR_8_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_1"
+\a cdsLibManager->cellListBox->value = "LFSR_8_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_2"
+\a cdsLibManager->cellListBox->value = "LFSR_8_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_3"
+\a cdsLibManager->cellListBox->value = "LFSR_9_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_0"
+\a cdsLibManager->cellListBox->value = "LFSR_9_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_1"
+\a cdsLibManager->cellListBox->value = "LFSR_9_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_2"
+\a cdsLibManager->cellListBox->value = "LFSR_9_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_3"
+\a cdsLibManager->cellListBox->value = "LFSR_11_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_11_0"
+\a cdsLibManager->cellListBox->value = "LFSR_11_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_11_1"
+\a cdsLibManager->cellListBox->value = "LFSR_11_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_11_0"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
@@ -96,10 +68,25 @@
 \a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
+\w LIB ece4740 from the same file (defined earlier.)
+\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
+\a cdsLibManager->libListBox->value = "finalProject"
+\a cdsLibManager->libLineEdit->value = "finalProject"
+\a cdsLibManager->cellListBox->value = "LFSR_11_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_11_0"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
@@ -113,90 +100,168 @@
 \w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
 \a cdsLibManager->libListBox->value = "finalProject"
 \a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_7_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_7_0"
+\a cdsLibManager->cellListBox->value = "LFSR_11_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_11_0"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "LFSR_9_3"
 \a cdsLibManager->cellLineEdit->value = "LFSR_9_3"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "LFSR_11_2"
-\a cdsLibManager->cellLineEdit->value = "LFSR_11_2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "testbench_full"
+\a cdsLibManager->cellLineEdit->value = "testbench_full"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 37 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
+\w LIB ece4740 from the same file (defined earlier.)
+\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
+\a cdsLibManager->libListBox->value = "finalProject"
+\a cdsLibManager->libLineEdit->value = "finalProject"
+\a cdsLibManager->cellListBox->value = "testbench_full"
+\a cdsLibManager->cellLineEdit->value = "testbench_full"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ece4740lab3_v2"
+\a cdsLibManager->libLineEdit->value = "ece4740lab3_v2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = "finalProject"
+\a cdsLibManager->libLineEdit->value = "finalProject"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "LFSR_9_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_0"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
+\w LIB ece4740 from the same file (defined earlier.)
+\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
+\a cdsLibManager->libListBox->value = "finalProject"
+\a cdsLibManager->libLineEdit->value = "finalProject"
+\a cdsLibManager->cellListBox->value = "LFSR_9_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_0"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "LFSR_9_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_8_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_8_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_9_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_0"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_9_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_9_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_9_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellListBox->value = "LFSR_11_0"
 \a cdsLibManager->cellLineEdit->value = "LFSR_11_0"
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_7_3"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_7_2"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_7_1"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "LFSR_7_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_0"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "Final_MUX_tb"
-\a cdsLibManager->cellLineEdit->value = "Final_MUX_tb"
-\a cdsLibManager->cellListBox->value = "Final_MUX_2"
-\a cdsLibManager->cellLineEdit->value = "Final_MUX_2"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "Final_MUX_1"
-\a cdsLibManager->cellLineEdit->value = "Final_MUX_1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "Final_MUX"
-\a cdsLibManager->cellLineEdit->value = "Final_MUX"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "DFF_min"
-\a cdsLibManager->cellLineEdit->value = "DFF_min"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "Final_MUX_tb"
-\a cdsLibManager->cellLineEdit->value = "Final_MUX_tb"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "testbench_full"
-\a cdsLibManager->cellLineEdit->value = "testbench_full"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "LFSR_11_3"
-\a cdsLibManager->cellLineEdit->value = "LFSR_11_3"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -208,102 +273,14 @@
 \w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
 \a cdsLibManager->libListBox->value = "finalProject"
 \a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_11_3"
-\a cdsLibManager->cellLineEdit->value = "LFSR_11_3"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff_dynamic_reset"
-\a cdsLibManager->cellLineEdit->value = "dff_dynamic_reset"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
-\w LIB ece4740 from the same file (defined earlier.)
-\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
-\w LIB ece4740 from the same file (defined earlier.)
-\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
-\a cdsLibManager->libListBox->value = "finalProject"
-\a cdsLibManager->libLineEdit->value = "finalProject"
-\a cdsLibManager->cellListBox->value = "LFSR_8_0"
-\a cdsLibManager->cellLineEdit->value = "LFSR_8_0"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "testbench_full"
-\a cdsLibManager->cellLineEdit->value = "testbench_full"
+\a cdsLibManager->cellListBox->value = "LFSR_7_0"
+\a cdsLibManager->cellLineEdit->value = "LFSR_7_0"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a exit(0)

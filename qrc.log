@@ -14,9 +14,9 @@ specified, it is automatically set to the input directory.
 
 INFO (EXTQRCXLOG-103) : Command file checking completed.
 
-Ending at 2021-May-17 03:38:20 (2021-May-17 07:38:20 GMT).
+Ending at 2021-May-17 13:14:21 (2021-May-17 17:14:21 GMT).
   Executed by:           hpl23
-  Execution host:        en-ec-ecelinux-08.coecis.cornell.edu
+  Execution host:        en-ec-ecelinux-04.coecis.cornell.edu
   Run duration:          00:00:00 CPU time, 00:00:00 clock time
   Memory used:           174,915,584
   Warning messages:      0

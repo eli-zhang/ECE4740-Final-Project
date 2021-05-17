@@ -1,0 +1,31 @@
+sti psubstrate nwell_conn
+mt7 mt7
+mt8 mt8
+mt9 mt9
+diff np_rpdiff_conn p_rpdiff_conn np_rndiff_conn p_rndiff_conn
+metal6_conn np_rmetal6_conn p_rmetal6_conn
+metal5_conn np_rmetal5_conn p_rmetal5_conn
+metal4_conn np_rmetal4_conn p_rmetal4_conn
+metal3_conn np_rmetal3_conn p_rmetal3_conn
+metal2_conn np_rmetal2_conn p_rmetal2_conn
+metal1_conn np_rmetal1_conn p_rmetal1_conn
+poly_conn np_rpoly_conn p_rpoly_conn
+ndiff_conn np_rndiff_conn p_rndiff_conn
+pdiff_conn np_rpdiff_conn p_rpdiff_conn
+nwell_conn np_rnwell_conn p_rnwell_conn
+psubstrate psubstrate
+Via4 np_rVia4 p_rVia4
+Via3 np_rVia3 p_rVia3
+via2_out_capInd np_rvia2_out_capInd p_rvia2_out_capInd
+Via1 np_rVia1 p_rVia1
+Metal1_v Metal1_v
+Metal1_p np_rMetal1_p p_rMetal1_p
+cont_poly np_rcont_poly p_rcont_poly
+cont_pdiff cont_pdiff
+cont_ndiff cont_ndiff
+ptap_pdiff_conn_ovia ptap_pdiff_conn_ovia
+ptap np_rptap p_rptap
+psubstrate_ptap_ovia psubstrate_ptap_ovia
+ntap_ndiff_conn_ovia ntap_ndiff_conn_ovia
+ntap np_rntap p_rntap
+nwell_conn_ntap_ovia nwell_conn_ntap_ovia

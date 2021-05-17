@@ -1,0 +1,43 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:29 (sjfhw697) $
+sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
+run on en-ec-ecelinux-04.coecis.cornell.edu at Mon May 17 13:13:50 2021
+
+Schematic                               | Layout                               | Status
+-----------------------------------------------------------------------------------------
+inv_min_x2.5 schematic finalProject     | inv_min_x2.5 layout finalProject     | matched
+inv_min_x4 schematic finalProject       | inv_min_x4 layout finalProject       | matched
+inv_clk_dff_large schematic finalProject| inv_clk_dff_large layout finalProject| matched
+inv_min schematic finalProject          | inv_min layout finalProject          | matched
+xor_regular schematic finalProject      | xor_regular layout finalProject      | matched
+mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched
+dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched
+dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| matched
+LFSR_9_0 schematic finalProject         | LFSR_9_0 layout finalProject         | matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:finalProject
+  Cell   :LFSR_9_0
+  View   :schematic
+
+Layout:
+  Library:finalProject
+  Cell   :LFSR_9_0
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+
