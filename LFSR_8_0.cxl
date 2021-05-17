@@ -1,0 +1,140 @@
+C pmos1v(MOS) pmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C nmos1v(MOS) nmos1v(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "inv_min_x2.5 schematic finalProject" "inv_min_x2.5 layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_min_x4 schematic finalProject" "inv_min_x4 layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_clk_dff schematic finalProject" "inv_clk_dff layout finalProject"
+N Vin avC2
+N Vout avC4
+N vdd! avC3
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "inv_min schematic finalProject" "inv_min layout finalProject"
+N Vin avC2
+N Vout avC3
+N vdd! avC4
+N gnd! avT557_1
+I NM0 avD1_1
+I PM0 avD7_1
+
+C "mux_2_1 schematic finalProject" "mux_2_1 layout finalProject"
+N A avC6
+N B avC7
+N SEL avC4
+N !SEL avC2
+N Y avC3
+N gnd! avT557_1
+I NM1 avD1_1
+I NM0 avD1_2
+I PM1 avD7_2
+I PM0 avD7_1
+
+C "dff_dynamic schematic finalProject" "dff_dynamic layout finalProject"
+N QM avC7
+N D avC2
+N CLK avC4
+N !CLK avC3
+N Q avC6
+N vdd! avC5
+N gnd! avT557_1
+I NM5 avD1_3
+I NM4 avD1_5
+I NM1 avD1_1
+I NM0 avD1_2
+I PM5 avD7_5
+I PM4 avD7_3
+I PM1 avD7_2
+I PM0 avD7_1
+
+C "dff_dynamic_reset schematic finalProject" "dff_dynamic_reset layout finalProject"
+N QDFF avC10
+N D avC2
+N CLK avC4
+N !CLK avC3
+N R avC5
+N Set avC9
+N !Set avC7
+N Q avC8
+N gnd! avT557_1
+I I0 I0
+I I1 I1
+
+C "xor_regular schematic finalProject" "xor_regular layout finalProject"
+N vpd avC6
+N drains avC7
+N A avC3
+N B avC2
+N Y avC5
+N vdd! avC4
+N gnd! avT557_1
+I NM4 avD1_3
+I NM3 avD1_5
+I NM2 avD1_1
+I NM1 avD1_2
+I NM0 avD1_4
+I PM3 avD7_4
+I PM2 avD7_1
+I PM1 avD7_2
+I PM0 avD7_3
+
+C "LFSR_8_0 schematic finalProject" "LFSR_8_0 layout finalProject"
+N !8_B0 avC9
+N !Set avC6
+N !CLK4 avC7
+N vo8 avC11
+N vo7 avC8
+N vo1 avC13
+N vo2 avC10
+N vi3 avC15
+N vo3 avC16
+N vi4 avC17
+N vo4 avC19
+N vi5 avC18
+N vo5 avC14
+N vo6 avC12
+N CLK CLK
+N Set Set
+N 8_B0 8_B0
+N vdd! vdd!
+N gnd! gnd!
+I I204 I204
+I I205 I205
+I I206 I206
+I I203 I203
+I I197 I197
+I I196 I196
+I I198 I198
+I I199 I199
+I I200 I200
+I I201 I201
+I I202 I202
+I I4 I4
+I I294 I294
+I I2 I2
+I I7 I7
+
