@@ -1,0 +1,13 @@
+"xor_regular layout finalProject" "xor_regular schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"mux_2_1 layout finalProject" "mux_2_1 schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"inv_min_x4 layout finalProject" "inv_min_x4 schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"inv_min_x2 layout finalProject" "inv_min_x2 schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"inv_min layout finalProject" "inv_min schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"inv_clk_dff_large layout finalProject" "inv_clk_dff_large schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"dff_dynamic_reset layout finalProject" "dff_dynamic_reset schematic finalProject"
+"dff_dynamic layout finalProject" "dff_dynamic schematic finalProject" "nmos1v(MOS)" "pmos1v(MOS)"
+"LFSR_11_0 layout finalProject" "LFSR_11_0 schematic finalProject"
+Devices filtered from layout
+"TIE"

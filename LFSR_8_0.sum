@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII20.1-64b:ICADVM20.1-64b.500.15 12/21/2020 21:25 (sjfhw697) $
 sub-version 4.1_USR6_HF10, integ signature 2020-12-21-2022
 
-run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon May 17 00:51:13 2021
+run on en-ec-ecelinux-08.coecis.cornell.edu from /opt/cadence/ASSURA41/tools.lnx86/assura/bin/64bit/aveng on Mon May 17 03:37:34 2021
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -1756,15 +1756,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 14
     Metal1_d = geomOr( Metal1_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 145
 
  ;# 15
     Metal1_d_pin = geomOr( Metal1_d_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 117
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 118
 
  ;# 16
     Metal1_d = geomOr( Metal1_d Metal1_d_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 145
 
  ;# 17
     Metal1_p = geomOr( Metal1_p ) 
@@ -1772,11 +1772,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 18
     Metal1_p_pin = geomOr( Metal1_p_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 117
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 118
 
  ;# 19
     Metal1_p = geomOr( Metal1_p Metal1_p_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 117
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 118
 
  ;# 20
     dataReduction( Metal1_p ) 
@@ -1784,7 +1784,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 21
  ;  region( Metal1_p )
-    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 117
+    cpu: 0.0   elapsed: 0   virtual: 128M   task sum: 118
 
  ;# 22
     Metal2_d = geomOr( Metal2_d ) 
@@ -2128,7 +2128,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 107
     Metal1_v = geomAnd( Metal1_d Metal1_p ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 109
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 110
 
  ;# 108
     dataReduction( Metal1_v ) 
@@ -2564,15 +2564,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 216
     Metal1_d_n = geomCat( Metal1_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 217
     T?317 = geomOr( Metal1_d_n ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 218
     L59680 = geomOr( T?317 Metal1_p ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 219
     Metal1_f = geomOr( Metal1_f ) 
@@ -2580,7 +2580,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 220
     Metal1 = geomOr( L59680 Metal1_f ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 221
     Metal1_slot = geomOr( Metal1_slot ) 
@@ -2588,7 +2588,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 222
     L32159 = geomAndNot( Metal1 Metal1_slot ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 223
     M1Resdum = geomOr( M1Resdum ) 
@@ -2604,7 +2604,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 226
     metal1_conn = geomAndNot( L32159 M1Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 227
     dataReduction( metal1_conn ) 
@@ -2612,7 +2612,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 228
  ;  region( metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 145
 
  ;# 229
     cont_poly = groupVias(  via(cont_poly) conn1(metal1_conn) conn2(poly_conn) )
@@ -2660,7 +2660,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 240
  ;  region( Metal1_v )
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 109
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 110
 
  ;# 241
     cont_pdiff = groupVias(  via(cont_pdiff) conn1(metal1_conn) conn2(pdiff_conn) )
@@ -2936,7 +2936,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 309
     dataReduction( Metal4_v ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 310
  ;  region( Metal4_v )
@@ -4132,11 +4132,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 608
  ;  via( Metal1_v Metal1_p )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 109
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 110
 
  ;# 609
  ;  via( Metal1_v metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 109
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 110
 
  ;# 610
  ;  via( cont_poly metal1_conn )
@@ -11771,35 +11771,35 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 2497
     unstable_device_for__vpnp2_BJT_43 = unstableDevices( "vpnp2" _vpnp2_BJT_43 _vpnp2_BJT_43)
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2498
     dataReduction( _vpnp2_BJT_43 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2499
     dataReduction( _vpnp2_BJT_43_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2500
  ;  region( _vpnp2_BJT_43_shape )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2501
  ;  region( _vpnp2_BJT_43 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2502
     T?2280 = geomOr( T?2278 T?2528 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2503
     errorLayer( geomAndNot( T?2280 _vpnp2_BJT_43 ) "malformed device _vpnp2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2504
     ATTACH_T?2082  = measureParameter( area ( _vpnp2 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2505
     CALC_T?2083 = calculateParameter( ATTACH_T?2082 * 1 ) 
@@ -11867,39 +11867,39 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 2521
     unstable_device_for__vpnp5_BJT_44 = unstableDevices( "vpnp5" _vpnp5_BJT_44 _vpnp5_BJT_44)
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2522
     dataReduction( _vpnp5_BJT_44 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2523
     dataReduction( _vpnp5_BJT_44_shape ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2524
  ;  region( _vpnp5_BJT_44_shape )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2525
  ;  region( _vpnp5_BJT_44 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2526
     T?2283 = geomOr( T?2281 T?2535 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2527
     errorLayer( geomAndNot( T?2283 _vpnp5_BJT_44 ) "malformed device _vpnp5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2528
     ATTACH_T?2094  = measureParameter( area ( _vpnp5 ) ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2529
     CALC_T?2095 = calculateParameter( ATTACH_T?2094 * 1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2530
     attachParameter( CALC_T?2095 "area" _vpnp5 )
@@ -11995,63 +11995,63 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 
  ;# 2553
     CALC_T?2107 = calculateParameter( ATTACH_T?2106 * 1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2554
     attachParameter( CALC_T?2107 "area" _vpnp10 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2555
     T?2287 = _geomExtractMerge( _pnp ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2556
     unstable_device_for__pnp_BJT_46 = unstableDevices( "pnp" _pnp_BJT_46 T?2287)
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2557
     dataReduction( T?2287 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2558
  ;  region( T?2287 )
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2559
     T?2550 = _geomPushDown( psubstrate T?2287 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2560
     T?2551 = geomMerge( T?2550 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2561
     dataReduction( T?2551 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2562
     T?2552 = _geomPushDown( nwell_conn T?2287 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2563
     T?2553 = geomMerge( T?2552 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2564
     dataReduction( T?2553 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2565
     T?2554 = _geomPushDown( pdiff_conn T?2287 and ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2566
     T?2555 = geomMerge( T?2554 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2567
     dataReduction( T?2555 ) 
-    cpu: 0.0   elapsed: 0   virtual: 142M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 145M   task sum: 0
 
  ;# 2568
     extractBJT( "pnp" T?2287 psubstrate( "C" ) nwell_conn( "B" ) pdiff_conn( "E" ) flagMalformed  cellView("pnp ivpcell gpdk090"))
@@ -12425,8 +12425,8 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  477.5M virt       0 pf
 Total cells checked = 9
 Total rules checked = 2658
 
-Run time =  8.00 seconds
-CPU time =  1.50 seconds
+Run time =  7.00 seconds
+CPU time =  1.47 seconds
 VM HWM   =   477 Mbytes
 Disk HWM =     3 Mbytes
 Disk end =     3 Mbytes
