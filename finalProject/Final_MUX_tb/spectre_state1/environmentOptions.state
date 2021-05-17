@@ -52,7 +52,7 @@
 (envOpts sst2usecolon) nil
 (envOpts stimulusFile) nil
 (envOpts stopViewList) ("spectre")
-(envOpts switchViewList) ("spectre" "cmos_sch" "cmos.sch" "schematic" "veriloga")
+(envOpts switchViewList) ("spectre" "cmos_sch" "cmos.sch" "av_extracted" "schematic" "veriloga")
 (envOpts termDirectionMismatch) "default"
 (envOpts termMismatch) "default"
 (envOpts userCmdLineOption) ""
