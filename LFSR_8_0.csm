@@ -1,0 +1,16 @@
+Schematic                               | Layout                               | Status
+------------------------------------------------------------------------------------------
+inv_min_x2.5 schematic finalProject     | inv_min_x2.5 layout finalProject     | matched 
+inv_min_x4 schematic finalProject       | inv_min_x4 layout finalProject       | matched 
+inv_clk_dff schematic finalProject      | inv_clk_dff layout finalProject      | matched 
+inv_min schematic finalProject          | inv_min layout finalProject          | matched 
+mux_2_1 schematic finalProject          | mux_2_1 layout finalProject          | matched 
+dff_dynamic schematic finalProject      | dff_dynamic layout finalProject      | matched 
+dff_dynamic_reset schematic finalProject| dff_dynamic_reset layout finalProject| expanded
+xor_regular schematic finalProject      | xor_regular layout finalProject      | matched 
+LFSR_8_0 schematic finalProject         | LFSR_8_0 layout finalProject         | errors   *
+
+Mismatch between Schematic and Layout
+   1 cell with errors
+   1 cell expanded
+   7 cells matched

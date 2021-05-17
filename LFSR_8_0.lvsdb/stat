@@ -1,0 +1,6 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 filter reduce swap match
+8 3 ( ( "dff_dynamic" "dff_dynamic" "Cell" 1 1 0 0) ( "mux_2_1" "mux_2_1" "Cell" 1 1 0 0))
+1 3 ( ( "dff_dynamic" "dff_dynamic" "Cell" 1 1 0 0) ( "mux_2_1" "mux_2_1" "Cell" 1 1 0 0) ( "dff_dynamic" "dff_dynamic" "Cell" 8 8 0 0) ( "inv_clk_dff" "inv_clk_dff" "Cell" 1 1 0 0) ( "inv_min" "inv_min" "Cell" 1 1 0 0) ( "inv_min_x2.5" "inv_min_x2.5" "Cell" 1 1 0 0) ( "inv_min_x4" "inv_min_x4" "Cell" 1 1 0 0) ( "mux_2_1" "mux_2_1" "Cell" 8 8 0 0) ( "xor_regular" "xor_regular" "Cell" 3 3 0 0))
