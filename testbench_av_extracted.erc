@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'testbench_av_extracted layout finalProject':
+  info: Assign pin label "gnd!" at (1.8950, 12.3050) to layer `Metal1_p'.
+  info: Assign pin label "CLK" at (0.8650, 13.7200) to layer `Metal1_p'.
+  info: Assign pin label "B_OUT" at (3.3650, 17.5600) to layer `Metal1_p'.
+  info: Assign pin label "Set" at (9.6050, 13.8800) to layer `Metal1_p'.
+  info: Assign pin label "vdd!" at (10.2150, 15.7350) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

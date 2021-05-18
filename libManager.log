@@ -180,3 +180,26 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\w Warning: LIB ece4740 from File /home/hpl23/ECE4740-Final-Project/cds.lib Line 12 redefines
+\w LIB ece4740 from the same file (defined earlier.)
+\w Warning: '/home/hpl23/ECE4740-Final-Project/cds.lib', Line 14: path /home/hpl23/Cadence/ece4740lab3 already belongs to LIB ece4740lab3.
+\a cdsLibManager->libListBox->value = "finalProject"
+\a cdsLibManager->libLineEdit->value = "finalProject"
+\a cdsLibManager->cellListBox->value = "Final_MUX"
+\a cdsLibManager->cellLineEdit->value = "Final_MUX"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)
